@@ -1,5 +1,5 @@
 export const SITE_NAME = 'Ahmedabad Pest Control';
-export const SITE_URL = 'https://ahmedabadpestcontrol.com';
+export const SITE_URL = 'https://ahemdabadpestcontrol.com';
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 export const BUSINESS_PHONE = '+919876543210';
 export const BUSINESS_EMAIL = 'info@ahmedabadpest.com';

@@ -66,7 +66,7 @@ export const Services = () => {
         itemListElement: services.map((service, index) => ({
             '@type': 'ListItem',
             position: index + 1,
-            url: `https://ahmedabadpestcontrol.com/services/${service.slug}`,
+            url: `https://ahemdabadpestcontrol.com/services/${service.slug}`,
             name: `${service.title} in Ahmedabad`,
         })),
     };
@@ -79,7 +79,7 @@ export const Services = () => {
             name: 'Ahmedabad',
         },
         serviceType: services.map((s) => s.title),
-        url: 'https://ahmedabadpestcontrol.com/services',
+        url: 'https://ahemdabadpestcontrol.com/services',
     };
     return (<>
       <Seo {...pageSeo.services} />
