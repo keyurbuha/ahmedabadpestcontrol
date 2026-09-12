@@ -4,6 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { FloatingWhatsApp } from './FloatingWhatsApp';
+import { JsonLd } from './JsonLd';
+import {
+  getLocalBusinessSchema,
+  getWebsiteSchema,
+  getOrganizationSchema,
+} from '../data/structuredData';
 
 const pageTransition = {
   initial: { opacity: 0, y: 16 },
@@ -13,7 +19,6 @@ const pageTransition = {
 };
 
 function scrollToTop() {
-  // Prevent browser from restoring old scroll position on SPA navigations
   if ('scrollRestoration' in window.history) {
     window.history.scrollRestoration = 'manual';
   }
@@ -26,7 +31,6 @@ function scrollToTop() {
   html.scrollTop = 0;
   document.body.scrollTop = 0;
 
-  // Run again after paint / route transition so live builds don't stick mid-page
   requestAnimationFrame(() => {
     window.scrollTo(0, 0);
     html.scrollTop = 0;
@@ -43,7 +47,6 @@ export const Layout = () => {
       const id = location.hash.replace('#', '');
       const el = document.getElementById(id);
       if (el) {
-        // Allow layout to settle, then scroll to in-page target
         requestAnimationFrame(() => {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
@@ -55,6 +58,13 @@ export const Layout = () => {
 
   return (
     <div className="flex min-h-dvh flex-col overflow-x-clip">
+      <JsonLd
+        data={[
+          getLocalBusinessSchema(),
+          getWebsiteSchema(),
+          getOrganizationSchema(),
+        ]}
+      />
       <Navbar />
       <main className="flex-grow pt-[72px] sm:pt-[80px] md:pt-[88px]">
         <AnimatePresence mode="wait" initial={false}>
@@ -66,7 +76,6 @@ export const Layout = () => {
             transition={pageTransition.transition}
             className="overflow-x-clip"
             onAnimationComplete={() => {
-              // Ensure top after enter animation on production builds
               window.scrollTo(0, 0);
             }}
           >

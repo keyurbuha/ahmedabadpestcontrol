@@ -1,4 +1,5 @@
-import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ScrollReveal } from '../components/ScrollReveal';
@@ -9,10 +10,7 @@ import { Marquee } from '../components/Marquee';
 import { WHATSAPP_NUMBER } from '../utils/whatsapp';
 export const Contact = () => {
     return (<>
-      <Helmet>
-        <title>Contact Us | Ahmedabad Pest Control</title>
-        <meta name="description" content="Get in touch with Ahmedabad Pest Control for a free inspection and quote."/>
-      </Helmet>
+      <Seo {...pageSeo.contact} />
 
       <PageHero eyebrow="Get in touch" title="Contact Us" subtitle="Ready to secure your home from pests? Send an inquiry on WhatsApp or call us today."/>
 

@@ -1,4 +1,5 @@
-import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
 import { blogs } from '../data/blogs';
 import { BlogCard } from '../components/BlogCard';
 import { SectionHeading } from '../components/SectionHeading';
@@ -8,10 +9,7 @@ import { Marquee } from '../components/Marquee';
 export const Blog = () => {
     const categories = [...new Set(blogs.map((b) => b.category))];
     return (<>
-      <Helmet>
-        <title>Pest Control Blog & Tips | Ahmedabad Pest Control</title>
-        <meta name="description" content="Read our latest articles on pest control tips, prevention strategies, and maintaining a healthy home in Ahmedabad."/>
-      </Helmet>
+      <Seo {...pageSeo.blog} />
 
       <PageHero eyebrow="Guides & tips" title="Pest Control Blog" subtitle="Expert advice for keeping your Ahmedabad home or business safe from pests year-round."/>
 

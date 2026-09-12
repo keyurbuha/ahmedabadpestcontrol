@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
+import { JsonLd } from '../components/JsonLd';
+import { getFaqSchema, getBreadcrumbSchema } from '../data/structuredData';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { faqs } from '../data/faqs';
@@ -8,13 +11,22 @@ import { Button } from '../components/Button';
 import { PageHero } from '../components/PageHero';
 import { PageCta } from '../components/PageCta';
 import { Marquee } from '../components/Marquee';
+
 export const FAQ = () => {
-    const [openIndex, setOpenIndex] = useState(0);
-    return (<>
-      <Helmet>
-        <title>FAQs | Ahmedabad Pest Control</title>
-        <meta name="description" content="Frequently asked questions about our pest control services in Ahmedabad."/>
-      </Helmet>
+  const [openIndex, setOpenIndex] = useState(0);
+
+  return (
+    <>
+      <Seo {...pageSeo.faq} />
+      <JsonLd
+        data={[
+          getFaqSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'FAQs', path: '/faq' },
+          ]),
+        ]}
+      />
 
       <PageHero eyebrow="Help center" title="Frequently Asked Questions" subtitle="Clear answers on safety, process, pricing, and what to expect from our team."/>
 

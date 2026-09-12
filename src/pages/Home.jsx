@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { ShieldCheck, Award, ThumbsUp, CheckCircle, Search, SprayCan, Shield, Phone, Star, MapPin, } from 'lucide-react';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
+import { JsonLd } from '../components/JsonLd';
+import { getBreadcrumbSchema, getFaqSchema } from '../data/structuredData';
+import { ShieldCheck, Award, ThumbsUp, CheckCircle, Search, SprayCan, Shield, Phone, Star, MapPin } from 'lucide-react';
 import { Button } from '../components/Button';
 import { SectionHeading } from '../components/SectionHeading';
 import { ServiceCard } from '../components/ServiceCard';
@@ -34,11 +37,33 @@ const localities = [
 ];
 const serviceTags = services.map((s) => s.title);
 export const Home = () => {
-    return (<>
-      <Helmet>
-        <title>Ahmedabad Pest Control | Protecting Homes. Protecting Health.</title>
-        <meta name="description" content="Trusted pest control services in Ahmedabad. We offer safe, effective, and affordable treatments for termites, cockroaches, rodents, and more."/>
-      </Helmet>
+  const homeFaqs = [
+    {
+      question: 'Do you provide pest control across Ahmedabad?',
+      answer:
+        'Yes. Ahmedabad Pest Control serves major localities including Satellite, Bopal, Vastrapur, Prahlad Nagar, SG Highway, Thaltej, Gota, Chandkheda, Navrangpura, Maninagar and nearby areas.',
+    },
+    {
+      question: 'Which pests do you treat in Ahmedabad?',
+      answer:
+        'We treat termites, cockroaches, rodents, mosquitoes, bed bugs and lizards for homes, societies, offices and commercial spaces.',
+    },
+    {
+      question: 'How can I get a free pest control quote in Ahmedabad?',
+      answer:
+        'Use the Quick Inquiry form on our website or WhatsApp/call +91 98765 43210. We can often schedule inspection within 24 hours.',
+    },
+  ];
+
+  return (
+    <>
+      <Seo {...pageSeo.home} />
+      <JsonLd
+        data={[
+          getBreadcrumbSchema([{ name: 'Home', path: '/' }]),
+          getFaqSchema(homeFaqs),
+        ]}
+      />
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-brand-offwhite">

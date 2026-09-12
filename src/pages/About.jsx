@@ -1,4 +1,5 @@
-import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
 import { ShieldCheck, Users, Target, Award, CheckCircle } from 'lucide-react';
 import { SectionHeading } from '../components/SectionHeading';
 import { ScrollReveal } from '../components/ScrollReveal';
@@ -16,10 +17,7 @@ const values = [
 ];
 export const About = () => {
     return (<>
-      <Helmet>
-        <title>About Us | Ahmedabad Pest Control</title>
-        <meta name="description" content="Learn about Ahmedabad Pest Control, our mission, and our experienced team of pest management experts."/>
-      </Helmet>
+      <Seo {...pageSeo.about} />
 
       <PageHero eyebrow="Who we are" title="About Ahmedabad Pest Control" subtitle="Committed to safe, effective, and environmentally responsible pest control across Ahmedabad since 2008."/>
 

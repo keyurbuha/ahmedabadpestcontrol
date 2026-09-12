@@ -1,5 +1,5 @@
+import { Seo } from '../components/Seo';
 import { useParams, Navigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowLeft, MapPin, Search, ClipboardList, Shield } from 'lucide-react';
 import { services, serviceAreas } from '../data/services';
@@ -9,6 +9,9 @@ import { AreasMarquee } from '../components/AreasMarquee';
 import { Marquee } from '../components/Marquee';
 import { InquiryForm } from '../components/InquiryForm';
 import { SectionHeading } from '../components/SectionHeading';
+import { JsonLd } from '../components/JsonLd';
+import { getBreadcrumbSchema, getFaqSchema } from '../data/structuredData';
+import { SITE_URL } from '../data/seo';
 export const ServiceDetail = () => {
     const { slug } = useParams();
     const service = services.find((s) => s.slug === slug);
@@ -22,11 +25,13 @@ export const ServiceDetail = () => {
         '@type': 'Service',
         name: service.h1,
         description: service.metaDescription,
+        url: `${SITE_URL}/services/${service.slug}`,
         provider: {
             '@type': 'LocalBusiness',
             name: 'Ahmedabad Pest Control',
             areaServed: 'Ahmedabad, Gujarat',
             telephone: '+919876543210',
+            url: SITE_URL,
         },
         areaServed: serviceAreas.map((area) => ({
             '@type': 'Place',
@@ -34,27 +39,24 @@ export const ServiceDetail = () => {
         })),
         serviceType: service.title,
     };
-    const faqSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: service.faqs.map((faq) => ({
-            '@type': 'Question',
-            name: faq.question,
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: faq.answer,
-            },
-        })),
-    };
     return (<>
-      <Helmet>
-        <title>{service.metaTitle}</title>
-        <meta name="description" content={service.metaDescription}/>
-        <meta name="keywords" content={`${service.title.toLowerCase()} Ahmedabad, ${service.title.toLowerCase()} in Ahmedabad, pest control Ahmedabad, ${service.slug} treatment Ahmedabad`}/>
-        <link rel="canonical" href={`https://ahmedabadpestcontrol.com/services/${service.slug}`}/>
-        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      </Helmet>
+      <Seo
+        title={service.metaTitle}
+        description={service.metaDescription}
+        keywords={`${service.title.toLowerCase()} Ahmedabad, ${service.title.toLowerCase()} in Ahmedabad, pest control Ahmedabad, ${service.slug} treatment Ahmedabad, ${service.title.toLowerCase()} near me Ahmedabad`}
+        path={`/services/${service.slug}`}
+      />
+      <JsonLd
+        data={[
+          serviceSchema,
+          getFaqSchema(service.faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Services', path: '/services' },
+            { name: service.title, path: `/services/${service.slug}` },
+          ]),
+        ]}
+      />
 
       <section className="relative overflow-hidden bg-brand-dark text-white">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(47,158,68,0.22),_transparent_55%)]"/>

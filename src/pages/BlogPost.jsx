@@ -1,5 +1,5 @@
+import { Seo } from '../components/Seo';
 import { useParams, Navigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Clock, User, ArrowLeft, Calendar } from 'lucide-react';
 import { blogs } from '../data/blogs';
@@ -14,10 +14,14 @@ export const BlogPost = () => {
     }
     const related = blogs.filter((b) => b.id !== post.id).slice(0, 2);
     return (<>
-      <Helmet>
-        <title>{post.title} | Ahmedabad Pest Control</title>
-        <meta name="description" content={post.excerpt}/>
-      </Helmet>
+      <Seo
+        title={post.metaTitle || `${post.title} | Ahmedabad Pest Control`}
+        description={post.metaDescription || post.excerpt}
+        keywords={`${post.category} Ahmedabad, pest control tips Ahmedabad, ${post.slug.replace(/-/g, ' ')}`}
+        path={`/blog/${post.slug}`}
+        type="article"
+        image={post.image}
+      />
 
       <section className="bg-brand-offwhite pt-14 pb-10 md:pt-16 md:pb-12">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">

@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
 import { Link } from 'react-router-dom';
 import { Building2, CheckCircle, Home, MapPin, ShieldCheck, Store, Users, } from 'lucide-react';
 import { services, serviceAreas } from '../data/services';
@@ -80,11 +82,8 @@ export const Services = () => {
         url: 'https://ahmedabadpestcontrol.com/services',
     };
     return (<>
+      <Seo {...pageSeo.services} />
       <Helmet>
-        <title>Pest Control Services in Ahmedabad | Termite, Cockroach & More</title>
-        <meta name="description" content="Professional pest control services in Ahmedabad for termites, cockroaches, rodents, mosquitoes, bed bugs & lizards. Serving Satellite, Bopal, SG Highway & all major areas. Free inspection."/>
-        <meta name="keywords" content="pest control in Ahmedabad, termite control Ahmedabad, cockroach control Ahmedabad, mosquito fogging Ahmedabad, rodent control Ahmedabad, bed bug treatment Ahmedabad"/>
-        <link rel="canonical" href="https://ahmedabadpestcontrol.com/services"/>
         <script type="application/ld+json">{JSON.stringify(serviceListSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>

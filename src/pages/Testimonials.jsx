@@ -1,4 +1,5 @@
-import { Helmet } from 'react-helmet-async';
+import { Seo } from '../components/Seo';
+import { pageSeo } from '../data/seo';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { testimonials } from '../data/testimonials';
@@ -9,10 +10,7 @@ import { AreasMarquee } from '../components/AreasMarquee';
 import { Marquee } from '../components/Marquee';
 export const Testimonials = () => {
     return (<>
-      <Helmet>
-        <title>Testimonials | Ahmedabad Pest Control</title>
-        <meta name="description" content="Read what our satisfied customers in Ahmedabad have to say about our pest control services."/>
-      </Helmet>
+      <Seo {...pageSeo.testimonials} />
 
       <PageHero eyebrow="Client stories" title="Testimonials" subtitle="Real feedback from families and businesses we’ve helped across Ahmedabad."/>
 
