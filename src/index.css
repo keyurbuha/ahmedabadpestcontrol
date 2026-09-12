@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #2f9e44;
+  --color-brand-green-light: #40c057;
+  --color-brand-dark: #0c1610;
+  --color-brand-offwhite: #f4f7f4;
+  --color-brand-gold: #e8a317;
+  --font-sans: "Figtree", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-brand-offwhite text-brand-dark font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    overflow-wrap: anywhere;
+  }
+
+  img, video, iframe, svg {
+    max-width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .pb-safe {
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll var(--marquee-duration, 55s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Keep marquees moving gently instead of freezing */
+  .marquee-track {
+    animation-duration: 100s;
+  }
+}
