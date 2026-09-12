@@ -6,22 +6,55 @@ import { Footer } from './Footer';
 import { FloatingWhatsApp } from './FloatingWhatsApp';
 
 const pageTransition = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -12 },
-  transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] },
+  exit: { opacity: 0, y: -8 },
+  transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] },
 };
+
+function scrollToTop() {
+  // Prevent browser from restoring old scroll position on SPA navigations
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual';
+  }
+
+  const html = document.documentElement;
+  const previous = html.style.scrollBehavior;
+  html.style.scrollBehavior = 'auto';
+
+  window.scrollTo(0, 0);
+  html.scrollTop = 0;
+  document.body.scrollTop = 0;
+
+  // Run again after paint / route transition so live builds don't stick mid-page
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+    html.scrollTop = 0;
+    document.body.scrollTop = 0;
+    html.style.scrollBehavior = previous;
+  });
+}
 
 export const Layout = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Jump to top immediately so the new page enters from the top
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-  }, [location.pathname]);
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        // Allow layout to settle, then scroll to in-page target
+        requestAnimationFrame(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        return;
+      }
+    }
+    scrollToTop();
+  }, [location.pathname, location.search, location.hash]);
 
   return (
-    <div className="flex min-h-dvh flex-col overflow-x-hidden">
+    <div className="flex min-h-dvh flex-col overflow-x-clip">
       <Navbar />
       <main className="flex-grow pt-[72px] sm:pt-[80px] md:pt-[88px]">
         <AnimatePresence mode="wait" initial={false}>
@@ -31,7 +64,11 @@ export const Layout = () => {
             animate={pageTransition.animate}
             exit={pageTransition.exit}
             transition={pageTransition.transition}
-            className="overflow-x-hidden"
+            className="overflow-x-clip"
+            onAnimationComplete={() => {
+              // Ensure top after enter animation on production builds
+              window.scrollTo(0, 0);
+            }}
           >
             <Outlet />
           </motion.div>

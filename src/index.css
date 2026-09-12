@@ -12,12 +12,12 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: auto;
   }
 
   body {
-    @apply bg-brand-offwhite text-brand-dark font-sans antialiased overflow-x-hidden;
+    @apply bg-brand-offwhite text-brand-dark font-sans antialiased overflow-x-clip;
   }
 
   h1, h2, h3, h4 {
