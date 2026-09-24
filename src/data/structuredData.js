@@ -5,6 +5,7 @@ import {
   BUSINESS_PHONE,
   BUSINESS_EMAIL,
   BUSINESS_ADDRESS,
+  SOCIAL_LINKS,
 } from './seo';
 import { services, serviceAreas } from './services';
 import { faqs } from './faqs';
@@ -46,7 +47,6 @@ export function getLocalBusinessSchema() {
       streetAddress: BUSINESS_ADDRESS.street,
       addressLocality: BUSINESS_ADDRESS.locality,
       addressRegion: BUSINESS_ADDRESS.region,
-      postalCode: BUSINESS_ADDRESS.postalCode,
       addressCountry: BUSINESS_ADDRESS.country,
     },
     geo: {
@@ -68,7 +68,7 @@ export function getLocalBusinessSchema() {
         closes: '14:00',
       },
     ],
-    sameAs: [],
+    sameAs: [SOCIAL_LINKS.instagram, SOCIAL_LINKS.youtube],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Pest Control Services in Ahmedabad',
@@ -137,6 +137,7 @@ export function getOrganizationSchema() {
         availableLanguage: ['English', 'Hindi', 'Gujarati'],
       },
     ],
+    sameAs: [SOCIAL_LINKS.instagram, SOCIAL_LINKS.youtube],
   };
 }
 

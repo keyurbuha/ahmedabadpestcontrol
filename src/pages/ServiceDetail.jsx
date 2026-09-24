@@ -11,14 +11,13 @@ import { InquiryForm } from '../components/InquiryForm';
 import { SectionHeading } from '../components/SectionHeading';
 import { JsonLd } from '../components/JsonLd';
 import { getBreadcrumbSchema, getFaqSchema } from '../data/structuredData';
-import { SITE_URL } from '../data/seo';
+import { SITE_URL, BUSINESS_PHONE, BUSINESS_PHONE_DISPLAY } from '../data/seo';
 export const ServiceDetail = () => {
     const { slug } = useParams();
     const service = services.find((s) => s.slug === slug);
     if (!service) {
         return <Navigate to="/services" replace/>;
     }
-    const Icon = service.icon;
     const related = services.filter((s) => s.id !== service.id).slice(0, 3);
     const serviceSchema = {
         '@context': 'https://schema.org',
@@ -30,7 +29,7 @@ export const ServiceDetail = () => {
             '@type': 'LocalBusiness',
             name: 'Ahmedabad Pest Control',
             areaServed: 'Ahmedabad, Gujarat',
-            telephone: '+919876543210',
+            telephone: BUSINESS_PHONE,
             url: SITE_URL,
         },
         areaServed: serviceAreas.map((area) => ({
@@ -59,26 +58,32 @@ export const ServiceDetail = () => {
       />
 
       <section className="relative overflow-hidden bg-brand-dark text-white">
+        {service.image && (
+          <img
+            src={service.image}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/92 via-brand-dark/78 to-brand-dark/45"/>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/70 via-transparent to-brand-dark/40"/>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(47,158,68,0.22),_transparent_55%)]"/>
+
         <div className="container relative z-10 mx-auto px-4 sm:px-6 py-12 sm:py-14 md:py-20">
-          <Link to="/services" className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-brand-green transition-colors">
+          <Link to="/services" className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-sm font-medium text-white/65 hover:text-brand-green transition-colors">
             <ArrowLeft size={16}/> All pest control services
           </Link>
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col gap-5 sm:gap-6 sm:flex-row sm:items-center">
-            <div className="flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center border border-brand-green/30 bg-brand-green/15 text-brand-green">
-              <Icon size={30}/>
-            </div>
-            <div>
-              <p className="mb-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-brand-green">
-                Pest control in Ahmedabad
-              </p>
-              <h1 className="font-display text-[1.75rem] sm:text-4xl font-bold md:text-5xl mb-3 leading-tight">
-                {service.h1}
-              </h1>
-              <p className="text-base sm:text-lg text-gray-400 max-w-2xl leading-relaxed">
-                {service.description}
-              </p>
-            </div>
+          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl">
+            <p className="mb-2 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-brand-green">
+              Pest control in Ahmedabad
+            </p>
+            <h1 className="font-display text-[1.75rem] sm:text-4xl font-bold md:text-5xl mb-3 leading-tight text-white">
+              {service.h1}
+            </h1>
+            <p className="text-base sm:text-lg text-white/75 max-w-2xl leading-relaxed">
+              {service.description}
+            </p>
           </motion.div>
         </div>
       </section>
@@ -159,7 +164,7 @@ export const ServiceDetail = () => {
                 </h2>
                 <p className="text-gray-600 text-[15px] leading-relaxed mb-5">
                   We provide {service.title.toLowerCase()} across major Ahmedabad localities including Satellite,
-                  Vastrapur, Bopal, Prahlad Nagar, SG Highway, Thaltej, Gota, Chandkheda, Navrangpura, Maninagar, and more.
+                  Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and more.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {serviceAreas.slice(0, 12).map((area) => (<span key={area} className="inline-flex items-center gap-1.5 border border-brand-dark/10 bg-brand-offwhite px-2.5 py-1.5 text-xs font-medium text-gray-700">
@@ -208,8 +213,8 @@ export const ServiceDetail = () => {
                 </p>
                 <InquiryForm variant="quick"/>
                 <div className="mt-4 space-y-3">
-                  <Button href="tel:+919876543210" variant="outline" className="w-full">
-                    Call +91 98765 43210
+                  <Button href={`tel:${BUSINESS_PHONE}`} variant="outline" className="w-full">
+                    Call {BUSINESS_PHONE_DISPLAY}
                   </Button>
                   <p className="text-xs text-center text-gray-500">
                     Serving homes & businesses across Ahmedabad

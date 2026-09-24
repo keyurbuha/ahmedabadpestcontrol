@@ -1,4 +1,11 @@
 import { Bug, ShieldCheck, BugOff, Skull, Zap, Home } from 'lucide-react';
+import termiteImage from '../assets/termite-control.png';
+import cockroachImage from '../assets/cockroach-control.png';
+import rodentImage from '../assets/rodent-control.png';
+import mosquitoImage from '../assets/Mosquito-Pest-Control-Services.jpg';
+import bedBugImage from '../assets/bed-bugs-pest-control-services.webp';
+import lizardImage from '../assets/lizard-pest-control-services.png';
+
 export const services = [
     {
         id: 'termite-control',
@@ -6,6 +13,7 @@ export const services = [
         slug: 'termite',
         description: 'Advanced termite detection and treatment for homes and buildings in Ahmedabad. We protect woodwork and foundations with long-lasting barriers.',
         icon: Bug,
+        image: termiteImage,
         features: [
             'Drill-Fill-Seal technique',
             'Pre & post construction treatment',
@@ -17,7 +25,7 @@ export const services = [
         h1: 'Termite Control Services in Ahmedabad',
         intro: [
             'Looking for reliable termite control in Ahmedabad? Silent termite damage can weaken doors, windows, furniture, and even structural wood before you notice it. Our technicians inspect entry points, moisture zones, and wooden fittings, then apply targeted anti-termite treatment suited to your property.',
-            'We provide both pre-construction and post-construction termite treatment across Satellite, Vastrapur, Bopal, Prahlad Nagar, SG Highway, Thaltej, and nearby localities. Treatments are planned for Gujarat’s climate, where warmth and humidity help termite colonies spread quickly.',
+            'We provide both pre-construction and post-construction termite treatment across Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and nearby localities. Treatments are planned for Gujarat’s climate, where warmth and humidity help termite colonies spread quickly.',
             'Whether you need termite control for a bungalow, apartment, society common area, or commercial space, we focus on source control and lasting protection — not a temporary surface spray.',
         ],
         signs: [
@@ -53,6 +61,7 @@ export const services = [
         slug: 'cockroach',
         description: 'Kitchen-safe cockroach control in Ahmedabad using gel baiting and targeted sprays for lasting results in homes and restaurants.',
         icon: ShieldCheck,
+        image: cockroachImage,
         features: [
             'Odorless gel baiting',
             'Kitchen & drain-focused treatment',
@@ -100,6 +109,7 @@ export const services = [
         slug: 'rodent',
         description: 'Safe rodent control in Ahmedabad for rats and mice — trapping, baiting, and entry-point guidance for homes and warehouses.',
         icon: Skull,
+        image: rodentImage,
         features: [
             'Trapping & baiting stations',
             'Entry-point sealing advice',
@@ -147,6 +157,7 @@ export const services = [
         slug: 'mosquito',
         description: 'Mosquito fogging and larval treatment in Ahmedabad for homes, societies, and outdoor areas — helpful for dengue season preparedness.',
         icon: BugOff,
+        image: mosquitoImage,
         features: [
             'Thermal / outdoor fogging',
             'Larvicidal treatment for breeding spots',
@@ -158,7 +169,7 @@ export const services = [
         h1: 'Mosquito Control Services in Ahmedabad',
         intro: [
             'Ahmedabad’s monsoon and post-monsoon months often bring a sharp rise in mosquitoes around gardens, society compounds, terraces, and water-logging points. Our mosquito control service combines outdoor fogging with larval treatment for breeding sources.',
-            'We support bungalows, residential societies, schools, and commercial campuses across areas like Prahlad Nagar, SG Highway, Thaltej, Bopal, Chandkheda, and surrounding localities.',
+            'We support bungalows, residential societies, schools, and commercial campuses across areas like Makarba, Vasna, Satellite, Bopal, Shela, Shilaj, and surrounding localities.',
             'For best results, mosquito control should target both adult mosquitoes and breeding water — flower pots, coolers, drains, and unused containers.',
         ],
         signs: [
@@ -194,6 +205,7 @@ export const services = [
         slug: 'bed-bug',
         description: 'Thorough bed bug treatment in Ahmedabad for mattresses, sofas, and bedrooms — designed for complete colony control.',
         icon: Home,
+        image: bedBugImage,
         features: [
             'Mattress & furniture treatment',
             'Crack & crevice focus',
@@ -241,6 +253,7 @@ export const services = [
         slug: 'lizard',
         description: 'Lizard control in Ahmedabad using targeted repellent treatment for walls, ceilings, and common indoor resting spots.',
         icon: Zap,
+        image: lizardImage,
         features: [
             'Wall & ceiling spray treatment',
             'Non-staining application approach',
@@ -284,28 +297,13 @@ export const services = [
     },
 ];
 export const serviceAreas = [
-    'Satellite',
-    'Vastrapur',
-    'Bopal',
-    'Bodakdev',
-    'Prahlad Nagar',
-    'SG Highway',
-    'Thaltej',
-    'Ambli',
-    'Gota',
-    'Chandkheda',
-    'Navrangpura',
-    'Maninagar',
-    'Paldi',
-    'Naranpura',
-    'Memnagar',
-    'Science City Road',
-    'Sindhu Bhavan Road',
-    'South Bopal',
-    'Shela',
-    'Sanand Road',
-    'Naroda',
-    'Odhav',
-    'Vatva',
-    'Isanpur',
+  'Makarba',
+  'Vasna',
+  'Vejalpur',
+  'Paldi',
+  'Satellite',
+  'Bopal',
+  'Vastral',
+  'Shilaj',
+  'Shela',
 ];

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Seo } from '../components/Seo';
-import { pageSeo } from '../data/seo';
+import { pageSeo, BUSINESS_PHONE } from '../data/seo';
 import { Link } from 'react-router-dom';
 import { Building2, CheckCircle, Home, MapPin, ShieldCheck, Store, Users, } from 'lucide-react';
 import { services, serviceAreas } from '../data/services';
@@ -48,7 +48,7 @@ const pageFaqs = [
     },
     {
         q: 'Do you provide pest control near Satellite, Bopal, and SG Highway?',
-        a: 'Yes. We regularly serve Satellite, Bopal, Bodakdev, Prahlad Nagar, SG Highway, Thaltej, Vastrapur, Gota, Chandkheda, Maninagar, and many other Ahmedabad areas.',
+        a: 'Yes. We regularly serve Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and nearby Ahmedabad areas.',
     },
     {
         q: 'Are your treatments safe for kids and pets?',
@@ -88,7 +88,7 @@ export const Services = () => {
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
 
-      <PageHero eyebrow="Pest control in Ahmedabad" title="Professional Pest Control Services in Ahmedabad" subtitle="Safe, targeted treatments for homes, societies, offices, and commercial spaces across Ahmedabad — from Satellite and Bopal to Maninagar and Chandkheda."/>
+      <PageHero eyebrow="Pest control in Ahmedabad" title="Professional Pest Control Services in Ahmedabad" subtitle="Safe, targeted treatments for homes, societies, offices, and commercial spaces across Ahmedabad — Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj & Shela."/>
 
       <div className="border-y border-brand-dark/8 bg-brand-offwhite py-4">
         <Marquee speed="slow" gap="gap-8">
@@ -120,7 +120,7 @@ export const Services = () => {
                 <Button href="/contact" size="lg">
                   Book Free Inspection
                 </Button>
-                <Button href="tel:+919876543210" variant="outline" size="lg">
+                <Button href={`tel:${BUSINESS_PHONE}`} variant="outline" size="lg">
                   Call Now
                 </Button>
               </div>

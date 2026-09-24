@@ -3,6 +3,7 @@ import { Seo } from '../components/Seo';
 import { pageSeo } from '../data/seo';
 import { JsonLd } from '../components/JsonLd';
 import { getBreadcrumbSchema, getFaqSchema } from '../data/structuredData';
+import { BUSINESS_PHONE, BUSINESS_PHONE_DISPLAY, BUSINESS_AREAS } from '../data/seo';
 import { ShieldCheck, Award, ThumbsUp, CheckCircle, Search, SprayCan, Shield, Phone, Star, MapPin } from 'lucide-react';
 import { Button } from '../components/Button';
 import { SectionHeading } from '../components/SectionHeading';
@@ -13,6 +14,9 @@ import { testimonials } from '../data/testimonials';
 import { blogs } from '../data/blogs';
 import { BlogCard } from '../components/BlogCard';
 import { InquiryForm } from '../components/InquiryForm';
+import { YouTubeSlider } from '../components/YouTubeSlider';
+import heroBg from '../assets/pest-control-in-ahmedabad.jpg';
+
 const trustItems = [
     { icon: ShieldCheck, label: 'Trusted Professionals' },
     { icon: ThumbsUp, label: 'Safe & Effective' },
@@ -21,27 +25,13 @@ const trustItems = [
     { icon: Star, label: '15+ Years Experience' },
     { icon: MapPin, label: 'All Ahmedabad Areas' },
 ];
-const localities = [
-    'Satellite',
-    'Vastrapur',
-    'Bopal',
-    'Navrangpura',
-    'Prahlad Nagar',
-    'SG Highway',
-    'Thaltej',
-    'Ambli',
-    'Gota',
-    'Maninagar',
-    'Chandkheda',
-    'Bodakdev',
-];
-const serviceTags = services.map((s) => s.title);
+const localities = BUSINESS_AREAS;const serviceTags = services.map((s) => s.title);
 export const Home = () => {
   const homeFaqs = [
     {
       question: 'Do you provide pest control across Ahmedabad?',
       answer:
-        'Yes. Ahmedabad Pest Control serves major localities including Satellite, Bopal, Vastrapur, Prahlad Nagar, SG Highway, Thaltej, Gota, Chandkheda, Navrangpura, Maninagar and nearby areas.',
+        'Yes. Ahmedabad Pest Control serves Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela and nearby Ahmedabad localities.',
     },
     {
       question: 'Which pests do you treat in Ahmedabad?',
@@ -51,7 +41,7 @@ export const Home = () => {
     {
       question: 'How can I get a free pest control quote in Ahmedabad?',
       answer:
-        'Use the Quick Inquiry form on our website or WhatsApp/call +91 98765 43210. We can often schedule inspection within 24 hours.',
+        `Use the Quick Inquiry form on our website or WhatsApp/call ${BUSINESS_PHONE_DISPLAY}. We can often schedule inspection within 24 hours.`,
     },
   ];
 
@@ -66,9 +56,16 @@ export const Home = () => {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-offwhite">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(47,158,68,0.12),_transparent_55%)]"/>
-        <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-brand-green/5 blur-3xl"/>
+      <section className="relative overflow-hidden bg-brand-dark">
+        <img
+          src={heroBg}
+          alt=""
+          aria-hidden="true"
+          className="hero-bg-image absolute inset-0 h-full w-full object-cover object-[center_35%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/88 via-brand-dark/55 to-brand-dark/25"/>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-transparent to-brand-dark/30"/>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(47,158,68,0.18),_transparent_55%)]"/>
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 pt-8 pb-12 sm:pt-10 sm:pb-16 lg:pt-14 lg:pb-20">
           <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
@@ -77,45 +74,48 @@ export const Home = () => {
                 <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green animate-pulse"/>
                 <span className="leading-snug">Serving Ahmedabad homes & businesses</span>
               </p>
-              <h1 className="font-display text-[2.1rem] font-extrabold leading-[1.1] text-brand-dark sm:text-5xl lg:text-6xl xl:text-[4.25rem] mb-4 sm:mb-6">
+              <h1 className="font-display text-[2.1rem] font-extrabold leading-[1.1] text-white sm:text-5xl lg:text-6xl xl:text-[4.25rem] mb-4 sm:mb-6">
                 Pest-free spaces.
                 <br />
                 <span className="text-brand-green">Healthier living.</span>
               </h1>
-              <p className="mb-6 sm:mb-8 max-w-md text-base sm:text-lg leading-relaxed text-gray-600">
+              <p className="mb-6 sm:mb-8 max-w-md text-base sm:text-lg leading-relaxed text-white/75">
                 Professional inspection, precise treatment, and lasting protection — built for Ahmedabad’s climate and your family’s safety.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button href="#quick-inquiry" size="lg">
                   Get Free Quote
                 </Button>
-                <a href="tel:+919876543210" className="inline-flex min-h-12 items-center justify-center gap-2 px-2 py-3 text-brand-dark font-semibold hover:text-brand-green transition-colors">
+                <a href={`tel:${BUSINESS_PHONE}`} className="inline-flex min-h-12 items-center justify-center gap-2 px-2 py-3 text-white font-semibold hover:text-brand-green transition-colors">
                   <Phone size={18} className="text-brand-green"/>
-                  +91 98765 43210
+                  {BUSINESS_PHONE_DISPLAY}
                 </a>
               </div>
 
-              <div className="mt-8 sm:mt-10 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3 border-t border-brand-dark/10 pt-6 sm:pt-8 text-sm text-gray-600">
-                <span className="font-semibold text-brand-dark">10,000+ homes protected</span>
+              <div className="mt-8 sm:mt-10 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3 border-t border-white/15 pt-6 sm:pt-8 text-sm text-white/70">
+                <span className="font-semibold text-white">10,000+ homes protected</span>
                 <span>Family-safe treatments</span>
                 <span>Same-day service available</span>
               </div>
             </motion.div>
 
             <motion.div id="quick-inquiry" initial={{ opacity: 0, y: 32 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.12, ease: 'easeOut' }} className="relative scroll-mt-24">
-              <div className="absolute -inset-2 sm:-inset-3 rounded-[1.25rem] bg-brand-green/10 blur-2xl"/>
-              <div className="relative border border-brand-dark/8 bg-white p-4 shadow-[0_30px_80px_-40px_rgba(12,22,16,0.45)] sm:p-6 md:p-8">
-                <div className="mb-1 flex items-center justify-between gap-3">
-                  <h2 className="font-display text-xl sm:text-2xl font-bold text-brand-dark">Quick Inquiry</h2>
-                  <span className="hidden sm:inline-flex items-center gap-1.5 bg-brand-gold/15 px-2.5 py-1 text-xs font-bold text-brand-gold">
-                    <Award size={14}/>
-                    15+ Yrs
-                  </span>
+              <div className="absolute -inset-3 rounded-2xl bg-brand-green/15 blur-2xl"/>
+              <div className="relative overflow-hidden rounded-2xl border border-white/35 bg-white/20 p-4 shadow-[0_24px_60px_-20px_rgba(12,22,16,0.55)] backdrop-blur-xl sm:p-6 md:p-8">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/35 via-white/10 to-transparent"/>
+                <div className="relative">
+                  <div className="mb-1 flex items-center justify-between gap-3">
+                    <h2 className="font-display text-xl sm:text-2xl font-bold text-white drop-shadow-sm">Quick Inquiry</h2>
+                    <span className="hidden sm:inline-flex items-center gap-1.5 rounded-md border border-white/25 bg-white/20 px-2.5 py-1 text-xs font-bold text-brand-gold backdrop-blur-sm">
+                      <Award size={14}/>
+                      15+ Yrs
+                    </span>
+                  </div>
+                  <p className="mb-5 sm:mb-6 text-sm text-white/75">
+                    Share details — we’ll open WhatsApp with your inquiry ready to send.
+                  </p>
+                  <InquiryForm variant="quick" glass/>
                 </div>
-                <p className="mb-5 sm:mb-6 text-sm text-gray-500">
-                  Share details — we’ll open WhatsApp with your inquiry ready to send.
-                </p>
-                <InquiryForm variant="quick"/>
               </div>
             </motion.div>
           </div>
@@ -244,6 +244,20 @@ export const Home = () => {
         </Marquee>
       </section>
 
+      {/* Recent YouTube */}
+      <section className="bg-white py-20 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-10 md:mb-12">
+            <SectionHeading
+              eyebrow="Watch & learn"
+              title="Watch Our Latest Videos"
+              subtitle="Real treatments, tips, and pest problems solved across Ahmedabad — straight from our channel."
+            />
+          </div>
+          <YouTubeSlider />
+        </div>
+      </section>
+
       {/* Testimonials marquee */}
       <section className="overflow-hidden bg-brand-offwhite py-20 md:py-24">
         <div className="container mx-auto px-4 md:px-6 mb-10 md:mb-14">
@@ -318,8 +332,8 @@ export const Home = () => {
                 <Button href="/contact" size="lg">
                   Get a Free Quote
                 </Button>
-                <Button href="tel:+919876543210" variant="white" size="lg">
-                  Call +91 98765 43210
+                <Button href={`tel:${BUSINESS_PHONE}`} variant="white" size="lg">
+                  Call {BUSINESS_PHONE_DISPLAY}
                 </Button>
               </div>
             </motion.div>

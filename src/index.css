@@ -44,6 +44,10 @@
   .pb-safe {
     padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   }
+
+  .hero-bg-image {
+    animation: hero-zoom 18s ease-in-out infinite alternate;
+  }
 }
 
 @keyframes marquee-scroll {
@@ -52,6 +56,15 @@
   }
   to {
     transform: translateX(-25%);
+  }
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1.12);
   }
 }
 
@@ -68,5 +81,9 @@
   /* Keep marquees moving gently instead of freezing */
   .marquee-track {
     animation-duration: 100s;
+  }
+
+  .hero-bg-image {
+    animation: none;
   }
 }

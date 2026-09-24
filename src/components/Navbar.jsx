@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BUSINESS_PHONE, BUSINESS_PHONE_DISPLAY } from '../data/seo';
 const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
@@ -48,7 +49,7 @@ export const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3 z-50 shrink-0">
-          <a href="tel:+919876543210" className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-green/10 text-brand-green md:hidden" aria-label="Call us">
+          <a href={`tel:${BUSINESS_PHONE}`} className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-green/10 text-brand-green md:hidden" aria-label="Call us">
             <Phone size={18}/>
           </a>
 
@@ -58,8 +59,8 @@ export const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xs text-gray-500 font-medium">Call Us Now</span>
-              <a href="tel:+919876543210" className="font-bold text-brand-dark text-sm">
-                +91 98765 43210
+              <a href={`tel:${BUSINESS_PHONE}`} className="font-bold text-brand-dark text-sm">
+                {BUSINESS_PHONE_DISPLAY}
               </a>
             </div>
           </div>
@@ -82,9 +83,9 @@ export const Navbar = () => {
                 {link.name}
               </Link>))}
             <div className="px-5 pt-5 pb-6">
-              <a href="tel:+919876543210" className="flex items-center gap-3 text-brand-dark font-bold mb-4">
+              <a href={`tel:${BUSINESS_PHONE}`} className="flex items-center gap-3 text-brand-dark font-bold mb-4">
                 <Phone className="text-brand-green" size={20}/>
-                +91 98765 43210
+                {BUSINESS_PHONE_DISPLAY}
               </a>
               <Link to="/contact" className="flex justify-center w-full bg-brand-green text-white px-4 py-3.5 rounded-md font-semibold">
                 Get Free Quote
