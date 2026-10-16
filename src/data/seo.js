@@ -3,10 +3,10 @@ export const SITE_URL = 'https://ahemdabadpestcontrol.com';
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
 /** E.164 for tel: links and schema */
-export const BUSINESS_PHONE = '+917984636472';
+export const BUSINESS_PHONE = '+917984348574';
 /** Digits only for wa.me */
-export const WHATSAPP_NUMBER = '917984636472';
-export const BUSINESS_PHONE_DISPLAY = '+91 79846 36472';
+export const WHATSAPP_NUMBER = '917984348574';
+export const BUSINESS_PHONE_DISPLAY = '+91 79843 48574';
 export const BUSINESS_EMAIL = 'info@ahmedabadpest.com';
 
 export const BUSINESS_AREAS = [
