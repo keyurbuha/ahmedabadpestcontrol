@@ -1,0 +1,1283 @@
+{
+  "About": {
+    "field1": {
+      "label": "Family-safe treatments",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Certified technicians",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Root-cause inspection",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Warranty-backed service",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Transparent pricing",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Same-day availability",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Who we are",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "About Ahmedabad Pest Control",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Committed to safe, effective, and environmentally responsible pest control across Ahmed…",
+      "kind": "text"
+    },
+    "image10": {
+      "label": "/how-we-work.png",
+      "kind": "image"
+    },
+    "field11": {
+      "label": "Ahmedabad Pest Control team at work",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "Our story",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Protecting homes and health for 15+ years",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Built on trust, training, and treatments that last.",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "Ahmedabad Pest Control started with one mission: deliver high-quality pest management w…",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "We’ve grown into one of the city’s trusted names by using proven methods and continuous…",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "From termite barriers to mosquito fogging, we tailor each plan to your property and Ahm…",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "By the numbers",
+      "kind": "text"
+    },
+    "field19": {
+      "label": "Results that speak for themselves",
+      "kind": "text"
+    },
+    "field20": {
+      "label": "Years Experience",
+      "kind": "text"
+    },
+    "field21": {
+      "label": "Homes Protected",
+      "kind": "text"
+    },
+    "field22": {
+      "label": "Expert Technicians",
+      "kind": "text"
+    },
+    "field23": {
+      "label": "Satisfaction Rate",
+      "kind": "text"
+    },
+    "field24": {
+      "label": "Let’s protect your space",
+      "kind": "text"
+    }
+  },
+  "Blog": {
+    "field1": {
+      "label": "Guides & tips",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Pest Control Blog",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Expert advice for keeping your Ahmedabad home or business safe from pests year-round.",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Latest reading",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Practical articles from our team",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Prevention tips, warning signs, and treatment guidance written for real Ahmedabad homes.",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Dealing with an active infestation?",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Don’t wait it out. Book a free inspection and get a clear plan from our technicians.",
+      "kind": "text"
+    }
+  },
+  "BlogPost": {
+    "field1": {
+      "label": "Back to articles",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Need professional help?",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Our Ahmedabad team is ready to inspect and treat.",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Book Free Inspection",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Keep reading",
+      "kind": "text"
+    }
+  },
+  "Contact": {
+    "field1": {
+      "label": "Get in touch",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Contact Us",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Ready to secure your home from pests? Send an inquiry on WhatsApp or call us today.",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Free Inspection",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "WhatsApp Quotes",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Same-Day Visits",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Mon–Sat 8AM–8PM",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "All Ahmedabad Areas",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Reach us",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "We’re here to help",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "Ask about inspections, treatments, or ongoing maintenance for your home or business.",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "Areas We Serve",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Phone & WhatsApp",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Chat on WhatsApp",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "Email",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Business Hours",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "Mon – Sat: 8:00 AM – 8:00 PM",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "Sun: 9:00 AM – 2:00 PM",
+      "kind": "text"
+    },
+    "field19": {
+      "label": "Request a Free Quote",
+      "kind": "text"
+    },
+    "field20": {
+      "label": "Fill the form and we’ll open WhatsApp with your inquiry ready to send.",
+      "kind": "text"
+    },
+    "field21": {
+      "label": "Ahmedabad Pest Control Location",
+      "kind": "text"
+    }
+  },
+  "FAQ": {
+    "field1": {
+      "label": "Home",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "FAQs",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Help center",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Frequently Asked Questions",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Clear answers on safety, process, pricing, and what to expect from our team.",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Safety",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Pricing",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Process",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Warranty",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "Same-Day Service",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "Pets & Kids",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "Common queries",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Everything you need to know",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Still have questions?",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "Can’t find what you need? Our team is happy to help over call or WhatsApp.",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Contact Us",
+      "kind": "text"
+    }
+  },
+  "Home": {
+    "image1": {
+      "label": "/images/pest-control-in-ahmedabad.jpg",
+      "kind": "image"
+    },
+    "field2": {
+      "label": "Trusted Professionals",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Safe & Effective",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Advanced Technology",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "100% Satisfaction",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "15+ Years Experience",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "All Ahmedabad Areas",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Do you provide pest control across Ahmedabad?",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Yes. Ahmedabad Pest Control serves Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, V…",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "Which pests do you treat in Ahmedabad?",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "We treat termites, cockroaches, rodents, mosquitoes, bed bugs and lizards for homes, so…",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "How can I get a free pest control quote in Ahmedabad?",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Home",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Serving Ahmedabad homes & businesses",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "Pest-free spaces.",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Healthier living.",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "Professional inspection, precise treatment, and lasting protection — built for Ahmedaba…",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "Get Free Quote",
+      "kind": "text"
+    },
+    "field19": {
+      "label": "10,000+ homes protected",
+      "kind": "text"
+    },
+    "field20": {
+      "label": "Family-safe treatments",
+      "kind": "text"
+    },
+    "field21": {
+      "label": "Same-day service available",
+      "kind": "text"
+    },
+    "field22": {
+      "label": "Quick Inquiry",
+      "kind": "text"
+    },
+    "field23": {
+      "label": "15+ Yrs",
+      "kind": "text"
+    },
+    "field24": {
+      "label": "Share details — we’ll open WhatsApp with your inquiry ready to send.",
+      "kind": "text"
+    },
+    "field25": {
+      "label": "What we treat",
+      "kind": "text"
+    },
+    "field26": {
+      "label": "Pest control services for every infestation",
+      "kind": "text"
+    },
+    "field27": {
+      "label": "Targeted solutions for homes, societies, offices, and warehouses across Ahmedabad.",
+      "kind": "text"
+    },
+    "field28": {
+      "label": "View all services",
+      "kind": "text"
+    },
+    "image29": {
+      "label": "/how-we-work.png",
+      "kind": "image"
+    },
+    "field30": {
+      "label": "Certified Ahmedabad Pest Control technician treating a home",
+      "kind": "text"
+    },
+    "field31": {
+      "label": "Family-safe treatments",
+      "kind": "text"
+    },
+    "field32": {
+      "label": "Warranty-backed service across Ahmedabad",
+      "kind": "text"
+    },
+    "field33": {
+      "label": "Our process",
+      "kind": "text"
+    },
+    "field34": {
+      "label": "From inspection to lasting protection",
+      "kind": "text"
+    },
+    "field35": {
+      "label": "Every visit follows a clear method — find the source, treat precisely, then close the g…",
+      "kind": "text"
+    },
+    "field36": {
+      "label": "Inspect the property",
+      "kind": "text"
+    },
+    "field37": {
+      "label": "We check entry points, moisture zones, and breeding spots before any treatment begins.",
+      "kind": "text"
+    },
+    "field38": {
+      "label": "Treat with precision",
+      "kind": "text"
+    },
+    "field39": {
+      "label": "Certified technicians apply targeted, low-odour solutions suited to your space — not a …",
+      "kind": "text"
+    },
+    "field40": {
+      "label": "Protect & follow up",
+      "kind": "text"
+    },
+    "field41": {
+      "label": "Prevention guidance and follow-ups so the problem stays solved, not quiet for a week.",
+      "kind": "text"
+    },
+    "field42": {
+      "label": "Book Free Inspection",
+      "kind": "text"
+    },
+    "field43": {
+      "label": "Same-day visits in most Ahmedabad localities.",
+      "kind": "text"
+    },
+    "field44": {
+      "label": "Watch & learn",
+      "kind": "text"
+    },
+    "field45": {
+      "label": "Watch Our Latest Videos",
+      "kind": "text"
+    },
+    "field46": {
+      "label": "Real treatments, tips, and pest problems solved across Ahmedabad — straight from our ch…",
+      "kind": "text"
+    },
+    "field47": {
+      "label": "Client stories",
+      "kind": "text"
+    },
+    "field48": {
+      "label": "Trusted by families across Ahmedabad",
+      "kind": "text"
+    },
+    "field49": {
+      "label": "Real results from homes, kitchens, and societies we’ve treated.",
+      "kind": "text"
+    },
+    "field50": {
+      "label": "Read all reviews",
+      "kind": "text"
+    },
+    "field51": {
+      "label": "Guides & tips",
+      "kind": "text"
+    },
+    "field52": {
+      "label": "Practical advice for a pest-free home",
+      "kind": "text"
+    },
+    "field53": {
+      "label": "Simple, expert guidance written for Ahmedabad homes.",
+      "kind": "text"
+    },
+    "field54": {
+      "label": "Browse articles",
+      "kind": "text"
+    },
+    "field55": {
+      "label": "Free Inspection",
+      "kind": "text"
+    },
+    "field56": {
+      "label": "WhatsApp Quote",
+      "kind": "text"
+    },
+    "field57": {
+      "label": "Same-Day Service",
+      "kind": "text"
+    },
+    "field58": {
+      "label": "Warranty Backed",
+      "kind": "text"
+    },
+    "field59": {
+      "label": "Family Safe",
+      "kind": "text"
+    },
+    "field60": {
+      "label": "10,000+ Homes Protected",
+      "kind": "text"
+    },
+    "field61": {
+      "label": "Eco-Friendly Treatment",
+      "kind": "text"
+    },
+    "field62": {
+      "label": "All Ahmedabad Areas",
+      "kind": "text"
+    },
+    "field63": {
+      "label": "Ready for a pest-free home?",
+      "kind": "text"
+    },
+    "field64": {
+      "label": "Book a free inspection today. Our team will assess the issue and recommend the right tr…",
+      "kind": "text"
+    },
+    "field65": {
+      "label": "Get a Free Quote",
+      "kind": "text"
+    },
+    "field66": {
+      "label": "Call",
+      "kind": "text"
+    },
+    "quoteAnswer": {
+      "label": "Quote FAQ answer (use {phone} for the current business number)",
+      "kind": "text"
+    }
+  },
+  "ServiceDetail": {
+    "field1": {
+      "label": "Ahmedabad Pest Control",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Home",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Services",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "All pest control services",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Pest control in Ahmedabad",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "About our",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "in Ahmedabad",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "What’s included",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Common signs you need",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "Our",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "process",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "STEP",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "near you in Ahmedabad",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "We provide",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "across major Ahmedabad localities including Satellite, Makarba, Vasna, Vejalpur, Paldi,…",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "FAQs about",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "in Ahmedabad",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "Related pest control services",
+      "kind": "text"
+    },
+    "field19": {
+      "label": "in Ahmedabad",
+      "kind": "text"
+    },
+    "field20": {
+      "label": "Book",
+      "kind": "text"
+    },
+    "field21": {
+      "label": "in Ahmedabad",
+      "kind": "text"
+    },
+    "field22": {
+      "label": "Share your locality and pest issue — we’ll open WhatsApp with your inquiry ready to send.",
+      "kind": "text"
+    },
+    "field23": {
+      "label": "Call",
+      "kind": "text"
+    },
+    "field24": {
+      "label": "Serving homes & businesses across Ahmedabad",
+      "kind": "text"
+    },
+    "field25": {
+      "label": "Need help choosing?",
+      "kind": "text"
+    },
+    "field26": {
+      "label": "Free inspection, clear recommendations, and treatment planned for Ahmedabad homes and c…",
+      "kind": "text"
+    },
+    "field27": {
+      "label": "Request Free Quote",
+      "kind": "text"
+    },
+    "field28": {
+      "label": "View All Services",
+      "kind": "text"
+    },
+    "field29": {
+      "label": "Tell us your Ahmedabad locality and we’ll schedule inspection or treatment at the earli…",
+      "kind": "text"
+    },
+    "guideTitlePrefix": {
+      "label": "Advice heading prefix",
+      "kind": "text"
+    },
+    "guideTitleSuffix": {
+      "label": "Advice heading suffix",
+      "kind": "text"
+    },
+    "areaCtaPrefix": {
+      "label": "Area call-to-action prefix",
+      "kind": "text"
+    },
+    "areaCtaSuffix": {
+      "label": "Area call-to-action suffix",
+      "kind": "text"
+    }
+  },
+  "Services": {
+    "field1": {
+      "label": "Homes & bungalows",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Flats, duplexes, and independent houses across Ahmedabad needing safe indoor treatment.",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Residential societies",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Common-area mosquito, rodent, and general pest programs for societies and townships.",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Shops & restaurants",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Kitchen-focused cockroach and rodent control with discreet scheduling.",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Offices & warehouses",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Commercial pest management for offices, clinics, godowns, and industrial units.",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Family-safe methods with clear prep and after-care guidance",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "Targeted treatment plans — not one spray for every pest",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "Coverage across west, central, and east Ahmedabad localities",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "WhatsApp quotes and transparent pricing before work starts",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Warranty options on selected services like termite treatment",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Which pest control service do I need in Ahmedabad?",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "It depends on the pest and where activity is happening. Termites need structural treatm…",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Do you provide pest control near Satellite, Bopal, and SG Highway?",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "Yes. We regularly serve Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shi…",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "Are your treatments safe for kids and pets?",
+      "kind": "text"
+    },
+    "field19": {
+      "label": "Safety is prioritized. We use approved methods, explain precautions, and plan applicati…",
+      "kind": "text"
+    },
+    "field20": {
+      "label": "How fast can I book pest control in Ahmedabad?",
+      "kind": "text"
+    },
+    "field21": {
+      "label": "In most cases we can schedule inspection or service within 24 hours. Share your localit…",
+      "kind": "text"
+    },
+    "field22": {
+      "label": "Ahmedabad Pest Control",
+      "kind": "text"
+    },
+    "field23": {
+      "label": "Ahmedabad",
+      "kind": "text"
+    },
+    "field24": {
+      "label": "Pest control in Ahmedabad",
+      "kind": "text"
+    },
+    "field25": {
+      "label": "Professional Pest Control Services in Ahmedabad",
+      "kind": "text"
+    },
+    "field26": {
+      "label": "Safe, targeted treatments for homes, societies, offices, and commercial spaces across A…",
+      "kind": "text"
+    },
+    "field27": {
+      "label": "in Ahmedabad",
+      "kind": "text"
+    },
+    "field28": {
+      "label": "Why Ahmedabad needs specialist care",
+      "kind": "text"
+    },
+    "field29": {
+      "label": "Pest problems here need local solutions",
+      "kind": "text"
+    },
+    "field30": {
+      "label": "Warm weather, monsoon humidity, and dense housing make infestations spread fast — DIY s…",
+      "kind": "text"
+    },
+    "field31": {
+      "label": "Ahmedabad Pest Control provides end-to-end pest management for residential and commerci…",
+      "kind": "text"
+    },
+    "field32": {
+      "label": "termite control in Ahmedabad",
+      "kind": "text"
+    },
+    "field33": {
+      "label": ", kitchen",
+      "kind": "text"
+    },
+    "field34": {
+      "label": "cockroach treatment",
+      "kind": "text"
+    },
+    "field35": {
+      "label": ", society",
+      "kind": "text"
+    },
+    "field36": {
+      "label": "mosquito fogging",
+      "kind": "text"
+    },
+    "field37": {
+      "label": ", or rodent management for shops and warehouses, our technicians inspect first and trea…",
+      "kind": "text"
+    },
+    "field38": {
+      "label": "Every service plan is built around your property type — apartment, bungalow, society co…",
+      "kind": "text"
+    },
+    "field39": {
+      "label": "Book Free Inspection",
+      "kind": "text"
+    },
+    "field40": {
+      "label": "Call Now",
+      "kind": "text"
+    },
+    "field41": {
+      "label": "What you get with every service",
+      "kind": "text"
+    },
+    "field42": {
+      "label": "Our treatments",
+      "kind": "text"
+    },
+    "field43": {
+      "label": "Pest control services we offer in Ahmedabad",
+      "kind": "text"
+    },
+    "field44": {
+      "label": "Choose a service below for detailed process, signs of infestation, and local coverage i…",
+      "kind": "text"
+    },
+    "field45": {
+      "label": "Who we serve",
+      "kind": "text"
+    },
+    "field46": {
+      "label": "Residential and commercial pest control across Ahmedabad",
+      "kind": "text"
+    },
+    "field47": {
+      "label": "From single flats to full society contracts — we match the treatment to your space.",
+      "kind": "text"
+    },
+    "field48": {
+      "label": "Areas we cover",
+      "kind": "text"
+    },
+    "field49": {
+      "label": "Pest control near you in Ahmedabad",
+      "kind": "text"
+    },
+    "field50": {
+      "label": "Fast response across major Ahmedabad localities — west, central, and east corridors.",
+      "kind": "text"
+    },
+    "field51": {
+      "label": "Don’t see your society or road listed? Message us your landmark — we cover most of Ahme…",
+      "kind": "text"
+    },
+    "field52": {
+      "label": "How booking works",
+      "kind": "text"
+    },
+    "field53": {
+      "label": "Simple process from inquiry to protection",
+      "kind": "text"
+    },
+    "field54": {
+      "label": "Share your pest issue",
+      "kind": "text"
+    },
+    "field55": {
+      "label": "Tell us your locality in Ahmedabad and the pest problem via WhatsApp or our inquiry form.",
+      "kind": "text"
+    },
+    "field56": {
+      "label": "Free inspection & quote",
+      "kind": "text"
+    },
+    "field57": {
+      "label": "We inspect the property, identify the source, and share a clear treatment plan with pri…",
+      "kind": "text"
+    },
+    "field58": {
+      "label": "Treat & follow up",
+      "kind": "text"
+    },
+    "field59": {
+      "label": "Certified technicians complete the service and guide you on prevention for lasting resu…",
+      "kind": "text"
+    },
+    "field60": {
+      "label": "Local FAQs",
+      "kind": "text"
+    },
+    "field61": {
+      "label": "Common questions about pest control in Ahmedabad",
+      "kind": "text"
+    },
+    "field62": {
+      "label": "Need a specific service page?",
+      "kind": "text"
+    },
+    "field63": {
+      "label": "Need pest control in your Ahmedabad locality?",
+      "kind": "text"
+    },
+    "field64": {
+      "label": "Book a free inspection. We’ll identify the pest, recommend the right treatment, and sha…",
+      "kind": "text"
+    },
+    "sameDayNote": {
+      "label": "Local team and inspection availability",
+      "kind": "text"
+    }
+  },
+  "Testimonials": {
+    "field1": {
+      "label": "Client stories",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Testimonials",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Real feedback from families and businesses we’ve helped across Ahmedabad.",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "All reviews",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Trusted across Ahmedabad localities",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "From termite treatments to mosquito fogging — here’s what clients say after the job.",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Ready to experience the same service?",
+      "kind": "text"
+    }
+  },
+  "AreasMarquee": {},
+  "BlogCard": {
+    "field1": {
+      "label": "Read article",
+      "kind": "text"
+    }
+  },
+  "Button": {},
+  "FloatingWhatsApp": {
+    "field1": {
+      "label": "Chat with us on WhatsApp",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Chat on WhatsApp",
+      "kind": "text"
+    }
+  },
+  "Footer": {
+    "field1": {
+      "label": "Ahmedabad Pest Control",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Protecting Homes. Protecting Health. Trusted pest control services in Ahmedabad, ensuri…",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Instagram",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "YouTube",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Quick Links",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "About Us",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "All Services",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Pest Control Blog",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Testimonials",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "FAQs",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "Contact Us",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "Our Services",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "Contact Info",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Serving ",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "Ahmedabad Pest Control. All rights reserved.",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Privacy Policy",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "Terms of Service",
+      "kind": "text"
+    }
+  },
+  "InquiryForm": {
+    "field1": {
+      "label": "Full Name *",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Your name",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Phone Number *",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Please enter a valid 10 digit phone number",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "10-digit mobile",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "Email Address",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "optional",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "Service Needed *",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Select a service",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "General Inspection",
+      "kind": "text"
+    },
+    "field11": {
+      "label": "Service Needed *",
+      "kind": "text"
+    },
+    "field12": {
+      "label": "Select a service",
+      "kind": "text"
+    },
+    "field13": {
+      "label": "General Inspection",
+      "kind": "text"
+    },
+    "field14": {
+      "label": "Address/Locality",
+      "kind": "text"
+    },
+    "field15": {
+      "label": "e.g. Makarba, Vasna, Satellite",
+      "kind": "text"
+    },
+    "field16": {
+      "label": "Message",
+      "kind": "text"
+    },
+    "field17": {
+      "label": "Tell us about your pest problem",
+      "kind": "text"
+    },
+    "field18": {
+      "label": "Submitting opens WhatsApp with your inquiry ready to send.",
+      "kind": "text"
+    },
+    "websiteLabel": {
+      "label": "Spam-check field label",
+      "kind": "text"
+    },
+    "savingLabel": {
+      "label": "Saving button text",
+      "kind": "text"
+    },
+    "submitLabel": {
+      "label": "Submit button text",
+      "kind": "text"
+    },
+    "saveError": {
+      "label": "Inquiry error message",
+      "kind": "text"
+    },
+    "savedMessage": {
+      "label": "Inquiry saved message",
+      "kind": "text"
+    },
+    "continueLabel": {
+      "label": "WhatsApp continuation link",
+      "kind": "text"
+    }
+  },
+  "Layout": {},
+  "Marquee": {},
+  "Navbar": {
+    "callLabel": {
+      "label": "Phone contact label",
+      "kind": "text"
+    },
+    "quoteLabel": {
+      "label": "Quote button text",
+      "kind": "text"
+    },
+    "homeLabel": { "label": "Home navigation label", "kind": "text" },
+    "aboutLabel": { "label": "About navigation label", "kind": "text" },
+    "servicesLabel": { "label": "Services navigation label", "kind": "text" },
+    "blogLabel": { "label": "Blog navigation label", "kind": "text" },
+    "testimonialsLabel": { "label": "Testimonials navigation label", "kind": "text" },
+    "faqLabel": { "label": "FAQ navigation label", "kind": "text" },
+    "contactLabel": { "label": "Contact navigation label", "kind": "text" },
+    "callAriaLabel": { "label": "Mobile call accessibility label", "kind": "text" },
+    "menuAriaLabel": { "label": "Mobile menu accessibility label", "kind": "text" }
+  },
+  "PageCta": {
+    "field1": {
+      "label": "Free Inspection",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "WhatsApp Quote",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Same-Day Service",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Warranty Backed",
+      "kind": "text"
+    },
+    "field5": {
+      "label": "Family Safe",
+      "kind": "text"
+    },
+    "field6": {
+      "label": "10,000+ Homes Protected",
+      "kind": "text"
+    },
+    "field7": {
+      "label": "Eco-Friendly Treatment",
+      "kind": "text"
+    },
+    "field8": {
+      "label": "All Ahmedabad Areas",
+      "kind": "text"
+    },
+    "field9": {
+      "label": "Get a Free Quote",
+      "kind": "text"
+    },
+    "field10": {
+      "label": "Call",
+      "kind": "text"
+    },
+    "defaultTitle": {
+      "label": "Default call to action heading",
+      "kind": "text"
+    },
+    "defaultSubtitle": {
+      "label": "Default call to action description",
+      "kind": "text"
+    }
+  },
+  "PageHero": {},
+  "ScrollReveal": {},
+  "SectionHeading": {},
+  "ServiceCard": {},
+  "YouTubeSlider": {
+    "field1": {
+      "label": "Previous videos",
+      "kind": "text"
+    },
+    "field2": {
+      "label": "Next videos",
+      "kind": "text"
+    },
+    "field3": {
+      "label": "Watch more on YouTube",
+      "kind": "text"
+    },
+    "field4": {
+      "label": "Close video",
+      "kind": "text"
+    }
+  }
+}

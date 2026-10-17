@@ -1,44 +1,77 @@
-# Ahmedabad Pest Control Website
+﻿# Ahmedabad Pest Control
 
-This is a static, multi-page marketing website built for Ahmedabad Pest Control. It features a modern, responsive design optimized for lead generation.
+Next.js with JavaScript, MongoDB, Tailwind CSS, and a focused content admin. The existing public design, navigation, pages, and service/article URLs are preserved.
 
-## Tech Stack
+## Run locally
 
-- **Framework:** React + Vite (TypeScript)
-- **Routing:** React Router DOM
-- **Styling:** Tailwind CSS (v4)
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **SEO Management:** React Helmet Async
+Requires Node.js 24+ and MongoDB running locally.
 
-## Setup Instructions
+```powershell
+npm install
+Copy-Item .env.example .env.local
+npm run admin:create
+npm run dev
+```
 
-1.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+Open http://localhost:3000 and sign in at http://localhost:3000/admin. The admin creation command asks for an email, generates a strong password, and prints that password once. It also generates JWT_SECRET if missing. There are no default admin credentials and no public registration endpoint.
 
-2.  **Start the development server:**
-    ```bash
-    npm run dev
-    ```
+For unattended account creation, set ADMIN_EMAIL and ADMIN_PASSWORD in your shell or local environment file before running `npm run admin:create`; do not commit them. Initial passwords require at least 8 characters and at most 72 bytes; password changes in the admin require at least 12 characters. Password hashes use bcrypt. Admin sessions use signed, expiring JWTs in HttpOnly, SameSite cookies; production cookies also require HTTPS. No NextAuth is used.
 
-3.  **Build for production:**
-    ```bash
-    npm run build
-    ```
-    This will generate a `dist` folder containing static assets ready for deployment on Vercel, Netlify, or any static host.
+## Admin panel
 
-## Customizing Content
+- `/admin`: dashboard with content counts and recent inquiries.
+- `/admin/content`: edit business/contact details, existing page text and images, YouTube videos, and page SEO.
+- `/admin/services`, `/admin/blogs`, `/admin/faqs`, `/admin/reviews`, and `/admin/youtube`: create, edit, search, and delete each collection. The YouTube manager is seeded with the video links currently shown on the home page. New services and articles get public pages from their URL slug.
+- `/admin/media`: upload JPG, PNG, WebP, or AVIF images up to 5 MB. Multer writes multipart uploads to temporary server storage; Sharp validates, resizes, strips metadata, and saves WebP files under `DATA_DIR/uploads`.
+- `/admin/inquiries`: search and filter submissions, read messages, and mark inquiries new, contacted, or closed.
+- `/admin/settings`: change your password. This invalidates other sessions.
 
-- **Theme Colors:** All brand colors are defined in `src/index.css` using Tailwind v4 `@theme` variables (`--color-brand-green`, `--color-brand-dark`, etc.). Update these variables to instantly change the site's color scheme.
-- **Data (Services, Testimonials, FAQs):** Content is managed via data files in `src/data/`. You can edit `services.ts`, `testimonials.ts`, or `faqs.ts` to update the content dynamically across the site without changing component code.
-- **Images:** Look for the comments `/* TODO: Replace with real image */` in the page components (e.g., `Home.tsx`, `About.tsx`) to swap out the placeholder graphics with real assets.
+Page layouts and navigation remain fixed. Service and article SEO lives in each item editor; other page SEO is under Website content. SEO includes title, description, keywords, sharing image, canonical URL, and search indexing controls. YouTube URLs managed in the admin appear in the existing home-page video slider.
 
-## Contact Form Integration (Formspree)
+Changing the main phone number also updates its display format and WhatsApp number when they previously matched. They can still be set separately. Use `{phone}` in page SEO descriptions to insert the current display number automatically.
 
-The contact form is currently set up to send POST requests but needs your specific endpoint.
-1. Create a free account at [Formspree](https://formspree.io/) (or Web3Forms/EmailJS).
-2. Create a new form and copy the endpoint URL (e.g., `https://formspree.io/f/YOUR_FORM_ID`).
-3. Open `src/pages/Contact.tsx`.
-4. Replace the placeholder URL in the `fetch` call with your real endpoint.
+Save changes to publish immediately. Concurrent edits are checked to prevent overwriting another editor's save. Reloading the latest content is required after a version conflict.
+
+Public pages and metadata are rendered on the server using the saved MongoDB document. Public components do not fall back to a separate bundled copy. `sitemap.xml`, `robots.txt`, and `llms.txt` are generated from the same content. JSON-LD business and service information also uses current content. The initial website copy in `src/content/defaults.json` is seeded automatically on the first public request or admin content read. When new managed fields are added, they are merged into existing documents without overwriting saved admin edits; subsequent changes are stored in MongoDB.
+
+Both inquiry forms save submissions before opening WhatsApp. If a popup is blocked, a Continue on WhatsApp link is shown. Validation failures keep the entered details. Direct WhatsApp/chat buttons open WhatsApp; conversations themselves are not imported into the admin inbox.
+
+## Environment
+
+| Variable | Purpose |
+| --- | --- |
+| MONGODB_URI | Defaults to `mongodb://127.0.0.1:27017`; replace with an Atlas URI later |
+| MONGODB_DB | Defaults to `ahmedabad_pest_control` |
+| APP_ORIGIN | Exact browser origin, e.g. `http://localhost:3000` locally or `https://ahemdabadpestcontrol.com` in production |
+| JWT_SECRET | Random secret of at least 48 characters; generated by admin setup if missing |
+| DATA_DIR | Persistent image storage; defaults to `./storage` |
+| TRUST_LOCAL_PROXY | Set `true` only behind a local proxy that overwrites X-Real-IP |
+
+For Atlas, change MONGODB_URI, configure Atlas network access, and restart Next.js. To preserve local accounts, content, inquiries, and media records, migrate the database with MongoDB's dump/restore tools. Images remain on the VPS disk; back up DATA_DIR separately.
+
+The MongoDB driver reuses a connection pool. Collections are `admins`, `content`, `inquiries`, `media`, and expiring `rateLimits`. There is no public setup endpoint. Admin API reads and writes require a valid JWT; mutation requests require the configured origin. Sign-out invalidates the account's existing sessions.
+
+## VPS deployment
+
+```bash
+npm ci
+npm run build
+npm run start -- -H 127.0.0.1
+```
+
+Configure production environment variables, create the first admin, and run Next.js under your process manager. Serve the application through an HTTPS reverse proxy. Set APP_ORIGIN to the public HTTPS origin. Secure cookies require HTTPS in production.
+
+Keep MongoDB private and DATA_DIR writable by the application user, outside build output. Back up both MongoDB and DATA_DIR. Do not use static hosting or `next export`; the admin, server rendering, inquiries, and uploads require a Node server.
+
+For Nginx, proxy to `http://127.0.0.1:3000`, allow image upload request bodies up to 8 MB, preserve Host, and overwrite `X-Real-IP` with `$remote_addr`. Enable TRUST_LOCAL_PROXY only with that local proxy configuration. The socket address is used for rate limits otherwise. Restart Next.js after environment changes.
+
+## Verification
+
+```bash
+npm run lint
+npm test
+npm run build
+npm run test:e2e
+```
+
+Browser tests require MongoDB locally and Microsoft Edge (the Playwright `msedge` channel). They start a production server on port 3100, create an isolated `apc_e2e_<pid>` database, and remove that database and their uploaded test images afterward. No development data or accounts are changed. Run the build before browser tests. Screenshots and failure traces are written under ignored test output directories.

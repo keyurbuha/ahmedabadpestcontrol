@@ -1,0 +1,953 @@
+{
+  "site": {
+    "SITE_NAME": "Ahmedabad Pest Control",
+    "SITE_URL": "https://ahemdabadpestcontrol.com",
+    "DEFAULT_OG_IMAGE": "https://ahemdabadpestcontrol.com/logo.png",
+    "BUSINESS_PHONE": "+917984348574",
+    "WHATSAPP_NUMBER": "917984348574",
+    "BUSINESS_PHONE_DISPLAY": "+91 79843 48574",
+    "BUSINESS_EMAIL": "info@ahmedabadpest.com",
+    "BUSINESS_AREAS": [
+      "Makarba",
+      "Vasna",
+      "Vejalpur",
+      "Paldi",
+      "Satellite",
+      "Bopal",
+      "Vastral",
+      "Shilaj",
+      "Shela"
+    ],
+    "BUSINESS_ADDRESS_LINE": "Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, Ahmedabad",
+    "BUSINESS_ADDRESS": {
+      "street": "Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela",
+      "locality": "Ahmedabad",
+      "region": "Gujarat",
+      "postalCode": "",
+      "country": "IN"
+    },
+    "SOCIAL_LINKS": {
+      "youtube": "https://youtube.com/@ahmedabad_pest_control",
+      "instagram": "https://www.instagram.com/ahmedabad_pest.control"
+    },
+    "LOGO_IMAGE": "/logo.png",
+    "MAP_EMBED_URL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1m3!1d117506.11434914105!2d72.482012!3d23.0201818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "serviceAreas": [
+      "Makarba",
+      "Vasna",
+      "Vejalpur",
+      "Paldi",
+      "Satellite",
+      "Bopal",
+      "Vastral",
+      "Shilaj",
+      "Shela"
+    ]
+  },
+  "seo": {
+    "home": {
+      "title": "Pest Control in Ahmedabad | Free Inspection & Same-Day Service",
+      "description": "Trusted pest control in Ahmedabad for termites, cockroaches, rodents, mosquitoes & bed bugs. Family-safe treatments across Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj & Shela. Free inspection.",
+      "keywords": "pest control in Ahmedabad, Ahmedabad pest control, termite control Ahmedabad, cockroach control Ahmedabad, mosquito fogging Ahmedabad, best pest control Ahmedabad",
+      "path": "/",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "about": {
+      "title": "About Us | Pest Control Company in Ahmedabad Since 2008",
+      "description": "Learn about Ahmedabad Pest Control — 15+ years protecting homes and businesses across Ahmedabad with safe, certified pest management and warranty-backed treatments.",
+      "keywords": "pest control company Ahmedabad, about Ahmedabad Pest Control, trusted pest control Ahmedabad, professional pest management Gujarat",
+      "path": "/about",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "services": {
+      "title": "Pest Control Services in Ahmedabad | Termite, Cockroach & More",
+      "description": "Professional pest control services in Ahmedabad for termites, cockroaches, rodents, mosquitoes, bed bugs & lizards. Serving Makarba, Vasna, Satellite, Bopal, Shela & nearby areas. Free inspection.",
+      "keywords": "pest control services Ahmedabad, termite treatment Ahmedabad, cockroach gel treatment Ahmedabad, rodent control Ahmedabad, bed bug treatment Ahmedabad",
+      "path": "/services",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "blog": {
+      "title": "Pest Control Blog Ahmedabad | Tips for Homes & Societies",
+      "description": "Expert pest control tips for Ahmedabad homes — termite warning signs, monsoon mosquito prevention, and when to call professionals. Practical guides from local experts.",
+      "keywords": "pest control tips Ahmedabad, termite signs Ahmedabad, mosquito prevention monsoon Ahmedabad, home pest guide Gujarat",
+      "path": "/blog",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "testimonials": {
+      "title": "Customer Reviews | Pest Control in Ahmedabad",
+      "description": "Read real customer testimonials for Ahmedabad Pest Control from Makarba, Vasna, Satellite, Bopal, Shela and more. See why families trust our local pest treatments.",
+      "keywords": "pest control reviews Ahmedabad, Ahmedabad Pest Control testimonials, best pest control ratings Ahmedabad",
+      "path": "/testimonials",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "faq": {
+      "title": "Pest Control FAQs Ahmedabad | Safety, Pricing & Process",
+      "description": "Answers to common pest control questions in Ahmedabad — chemical safety for kids & pets, treatment time, warranty, and how soon we can inspect your home.",
+      "keywords": "pest control FAQ Ahmedabad, is pest control safe for pets, pest control warranty Ahmedabad, pest control cost Ahmedabad",
+      "path": "/faq",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    },
+    "contact": {
+      "title": "Contact Pest Control in Ahmedabad | Free Quote on WhatsApp",
+      "description": "Contact Ahmedabad Pest Control for free inspection and WhatsApp quotes. Call {phone}. Serving Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj & Shela.",
+      "keywords": "contact pest control Ahmedabad, pest control near me Ahmedabad, free pest inspection Ahmedabad, WhatsApp pest control quote",
+      "path": "/contact",
+      "image": "",
+      "canonical": "",
+      "noindex": false
+    }
+  },
+  "services": [
+    {
+      "id": "termite-control",
+      "title": "Termite Control",
+      "slug": "termite",
+      "description": "Advanced termite detection and treatment for homes and buildings in Ahmedabad. We protect woodwork and foundations with long-lasting barriers.",
+      "icon": "Bug",
+      "image": "/images/termite-control.png",
+      "features": [
+        "Drill-Fill-Seal technique",
+        "Pre & post construction treatment",
+        "Wood & soil treatment options",
+        "5-year warranty available"
+      ],
+      "metaTitle": "Termite Control in Ahmedabad | Anti-Termite Treatment",
+      "metaDescription": "Professional termite control in Ahmedabad for homes, flats & offices. Pre/post construction anti-termite treatment with warranty. Free inspection.",
+      "h1": "Termite Control Services in Ahmedabad",
+      "intro": [
+        "Looking for reliable termite control in Ahmedabad? Silent termite damage can weaken doors, windows, furniture, and even structural wood before you notice it. Our technicians inspect entry points, moisture zones, and wooden fittings, then apply targeted anti-termite treatment suited to your property.",
+        "We provide both pre-construction and post-construction termite treatment across Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and nearby localities. Treatments are planned for Gujarat’s climate, where warmth and humidity help termite colonies spread quickly.",
+        "Whether you need termite control for a bungalow, apartment, society common area, or commercial space, we focus on source control and lasting protection — not a temporary surface spray."
+      ],
+      "signs": [
+        "Hollow-sounding wood or blistered paint",
+        "Mud tubes on walls or foundations",
+        "Discarded wings near windows after monsoon",
+        "Damaged door frames, cupboards, or flooring"
+      ],
+      "process": [
+        "Detailed property inspection and risk mapping",
+        "Drill-fill-seal / barrier treatment as needed",
+        "Focused treatment of affected wood and soil zones",
+        "Prevention tips and warranty documentation"
+      ],
+      "faqs": [
+        {
+          "question": "How much does termite control cost in Ahmedabad?",
+          "answer": "Pricing depends on built-up area, construction type, and infestation level. After a free inspection, we share a clear quote before starting treatment."
+        },
+        {
+          "question": "Is anti-termite treatment safe for families?",
+          "answer": "Yes. We use approved formulations and follow safety guidelines. Our team explains precautions before and after the service."
+        },
+        {
+          "question": "Do you offer warranty on termite treatment?",
+          "answer": "Yes. Selected termite packages include warranty coverage. Terms are shared in writing before you confirm the job."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "cockroach-control",
+      "title": "Cockroach Control",
+      "slug": "cockroach",
+      "description": "Kitchen-safe cockroach control in Ahmedabad using gel baiting and targeted sprays for lasting results in homes and restaurants.",
+      "icon": "ShieldCheck",
+      "image": "/images/cockroach-control.png",
+      "features": [
+        "Odorless gel baiting",
+        "Kitchen & drain-focused treatment",
+        "Safe for kids & pets when used as directed",
+        "Follow-up support available"
+      ],
+      "metaTitle": "Cockroach Control in Ahmedabad | Kitchen Pest Treatment",
+      "metaDescription": "Effective cockroach control in Ahmedabad for homes, societies & restaurants. Odorless gel treatment for kitchens. Book a free inspection today.",
+      "h1": "Cockroach Control Services in Ahmedabad",
+      "intro": [
+        "Cockroach problems are common in Ahmedabad kitchens, especially in apartments and societies where shared plumbing and warm weather help infestations spread. Our cockroach control service targets hiding spots behind sinks, appliances, cabinets, and drains — not just open floors.",
+        "We use odorless gel baiting and precise application methods designed for residential and commercial kitchens across areas like Navrangpura, Maninagar, Gota, Chandkheda, Ambli, and Bodakdev.",
+        "If you keep seeing cockroaches at night, in sinks, or near food storage, professional treatment is more effective than repeated DIY sprays that only scatter the colony."
+      ],
+      "signs": [
+        "Cockroaches in kitchen cabinets or near the stove",
+        "Droppings in drawers or under sinks",
+        "Musty odor in enclosed kitchen spaces",
+        "Nymphs appearing even after cleaning"
+      ],
+      "process": [
+        "Inspect kitchen, bathrooms, and utility areas",
+        "Apply gel bait at harbourage points",
+        "Treat drains and high-activity zones carefully",
+        "Share hygiene tips to prevent re-infestation"
+      ],
+      "faqs": [
+        {
+          "question": "Is cockroach gel treatment safe for kitchens?",
+          "answer": "Yes. Gel is placed in cracks and corners, not on food-contact surfaces. We guide you on drying time and kitchen use after service."
+        },
+        {
+          "question": "How soon will cockroaches reduce after treatment?",
+          "answer": "Many homes notice a clear drop within a few days as baiting works through the colony. Severe cases may need a follow-up visit."
+        },
+        {
+          "question": "Do you treat restaurants and commercial kitchens in Ahmedabad?",
+          "answer": "Yes. We handle residential flats, bungalows, society blocks, cafes, and commercial kitchens with discreet, scheduled visits."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "rodent-control",
+      "title": "Rodent Control",
+      "slug": "rodent",
+      "description": "Safe rodent control in Ahmedabad for rats and mice — trapping, baiting, and entry-point guidance for homes and warehouses.",
+      "icon": "Skull",
+      "image": "/images/rodent-control.png",
+      "features": [
+        "Trapping & baiting stations",
+        "Entry-point sealing advice",
+        "Warehouses & society common areas",
+        "Carcass removal support"
+      ],
+      "metaTitle": "Rodent Control in Ahmedabad | Rat & Mouse Treatment",
+      "metaDescription": "Professional rodent control in Ahmedabad for homes, societies & warehouses. Rat and mouse treatment with trapping, baiting & prevention advice.",
+      "h1": "Rodent Control Services in Ahmedabad",
+      "intro": [
+        "Rats and mice damage wiring, contaminate food, and create hygiene risks in homes, societies, shops, and godowns across Ahmedabad. Our rodent control service combines inspection, trapping/baiting, and practical sealing advice to reduce return visits.",
+        "We regularly serve properties near markets, older colonies, and industrial belts, as well as residential localities such as Satellite, Odhav surroundings, Naroda-side areas, and west Ahmedabad societies.",
+        "Effective rodent control is not only about bait — it is about finding travel paths, nesting zones, and open entry points around pipes, drains, and roof gaps."
+      ],
+      "signs": [
+        "Droppings in kitchen or storeroom",
+        "Gnaw marks on packets, wires, or wood",
+        "Scratching sounds in ceilings at night",
+        "Grease marks along walls and baseboards"
+      ],
+      "process": [
+        "Map activity trails and nesting spots",
+        "Place traps/bait stations strategically",
+        "Advise on sealing gaps and waste points",
+        "Schedule follow-up where infestation is heavy"
+      ],
+      "faqs": [
+        {
+          "question": "Are rodent baits safe around pets?",
+          "answer": "We place stations carefully and discuss pet/child safety before treatment. In sensitive homes, trapping-first options can be prioritized."
+        },
+        {
+          "question": "Can you treat society common areas for rats?",
+          "answer": "Yes. We work with society committees for parking, duct, and common-area rodent programs across Ahmedabad."
+        },
+        {
+          "question": "Will one visit permanently remove rodents?",
+          "answer": "One strong treatment often reduces activity quickly, but lasting results need sealing and sanitation. We guide you on both."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "mosquito-control",
+      "title": "Mosquito Control",
+      "slug": "mosquito",
+      "description": "Mosquito fogging and larval treatment in Ahmedabad for homes, societies, and outdoor areas — helpful for dengue season preparedness.",
+      "icon": "BugOff",
+      "image": "/images/Mosquito-Pest-Control-Services.jpg",
+      "features": [
+        "Thermal / outdoor fogging",
+        "Larvicidal treatment for breeding spots",
+        "Society & bungalow packages",
+        "Monsoon & post-monsoon programs"
+      ],
+      "metaTitle": "Mosquito Control in Ahmedabad | Fogging & Larval Treatment",
+      "metaDescription": "Mosquito control in Ahmedabad with fogging and larval treatment for homes & societies. Reduce breeding and protect your family during monsoon.",
+      "h1": "Mosquito Control Services in Ahmedabad",
+      "intro": [
+        "Ahmedabad’s monsoon and post-monsoon months often bring a sharp rise in mosquitoes around gardens, society compounds, terraces, and water-logging points. Our mosquito control service combines outdoor fogging with larval treatment for breeding sources.",
+        "We support bungalows, residential societies, schools, and commercial campuses across areas like Makarba, Vasna, Satellite, Bopal, Shela, Shilaj, and surrounding localities.",
+        "For best results, mosquito control should target both adult mosquitoes and breeding water — flower pots, coolers, drains, and unused containers."
+      ],
+      "signs": [
+        "High mosquito activity at dusk/dawn",
+        "Larvae in coolers, pots, or stagnant water",
+        "Frequent bites indoors despite screens",
+        "Standing water around the compound"
+      ],
+      "process": [
+        "Identify outdoor/indoor breeding points",
+        "Apply fogging in active zones",
+        "Treat larval sources carefully",
+        "Recommend society-level prevention steps"
+      ],
+      "faqs": [
+        {
+          "question": "Do you provide mosquito fogging for societies in Ahmedabad?",
+          "answer": "Yes. We run one-time and periodic mosquito programs for societies, including common areas and landscaping zones."
+        },
+        {
+          "question": "Is fogging enough for dengue prevention?",
+          "answer": "Fogging helps reduce adult mosquitoes, but larval control and removing stagnant water are equally important. We cover both in our plans."
+        },
+        {
+          "question": "How often should mosquito treatment be done?",
+          "answer": "During peak season, societies often prefer fortnightly or monthly schedules. We recommend frequency after inspecting your premises."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "bed-bug-control",
+      "title": "Bed Bug Control",
+      "slug": "bed-bug",
+      "description": "Thorough bed bug treatment in Ahmedabad for mattresses, sofas, and bedrooms — designed for complete colony control.",
+      "icon": "Home",
+      "image": "/images/bed-bugs-pest-control-services.webp",
+      "features": [
+        "Mattress & furniture treatment",
+        "Crack & crevice focus",
+        "Two-visit protocol when required",
+        "Practical laundry & packing guidance"
+      ],
+      "metaTitle": "Bed Bug Control in Ahmedabad | Mattress & Room Treatment",
+      "metaDescription": "Expert bed bug control in Ahmedabad for homes & PGs. Mattress, sofa and bedroom treatment with follow-up support. Book inspection now.",
+      "h1": "Bed Bug Control Services in Ahmedabad",
+      "intro": [
+        "Bed bugs spread quickly through luggage, second-hand furniture, and densely occupied housing. If you wake up with bite marks or notice spots on sheets, professional bed bug control in Ahmedabad can stop the cycle before it spreads to other rooms.",
+        "Our team treats mattresses, bed frames, sofas, skirting, and furniture joints where bed bugs hide during the day. We commonly serve apartments, hostels, PGs, and hotels across the city.",
+        "Successful bed bug treatment needs precise coverage and sometimes a second visit — we set expectations clearly before starting."
+      ],
+      "signs": [
+        "Itchy bite clusters after sleeping",
+        "Blood spots or dark stains on sheets",
+        "Live bugs in mattress seams",
+        "Sweet musty odor in heavily infested rooms"
+      ],
+      "process": [
+        "Inspect beds, sofas, and nearby furniture",
+        "Treat all harbourage points thoroughly",
+        "Guide on washing/drying and room prep",
+        "Plan follow-up visit if infestation is severe"
+      ],
+      "faqs": [
+        {
+          "question": "Do I need to throw my mattress after bed bug treatment?",
+          "answer": "Usually no. Proper treatment can save mattresses and furniture. We advise replacement only if damage or infestation is extreme."
+        },
+        {
+          "question": "How should I prepare my room before treatment?",
+          "answer": "We share a simple checklist covering bedding, clutter, and laundry. Preparation improves results and reduces re-treatment needs."
+        },
+        {
+          "question": "Can bed bugs spread to the whole flat?",
+          "answer": "Yes, especially through sofas and shared walls. Early treatment of the first affected room is the best way to limit spread."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "lizard-control",
+      "title": "Lizard Control",
+      "slug": "lizard",
+      "description": "Lizard control in Ahmedabad using targeted repellent treatment for walls, ceilings, and common indoor resting spots.",
+      "icon": "Zap",
+      "image": "/images/lizard-pest-control-services.png",
+      "features": [
+        "Wall & ceiling spray treatment",
+        "Non-staining application approach",
+        "Focus on entry and resting zones",
+        "Fast visible reduction"
+      ],
+      "metaTitle": "Lizard Control in Ahmedabad | Home Wall & Ceiling Treatment",
+      "metaDescription": "Professional lizard control in Ahmedabad for homes and offices. Targeted wall and ceiling treatment to reduce lizards indoors. Free quote on WhatsApp.",
+      "h1": "Lizard Control Services in Ahmedabad",
+      "intro": [
+        "Lizards often enter Ahmedabad homes through windows, ducts, and gaps around lighting points — especially in warmer months. Our lizard control service focuses on indoor resting zones and entry-prone walls/ceilings.",
+        "We treat apartments and bungalows across west and central Ahmedabad localities, helping reduce lizard activity without messy DIY methods.",
+        "For lasting comfort, we also suggest simple sealing and lighting/hygiene habits that make your home less attractive to insects that lizards feed on."
+      ],
+      "signs": [
+        "Frequent lizard sightings on ceilings/walls",
+        "Droppings near lights and curtains",
+        "Lizards near kitchens or bathrooms",
+        "Increased insect activity attracting lizards"
+      ],
+      "process": [
+        "Identify high-activity walls and ceilings",
+        "Apply targeted repellent treatment",
+        "Check common entry and utility gaps",
+        "Share prevention tips for long-term control"
+      ],
+      "faqs": [
+        {
+          "question": "Is lizard treatment safe for children?",
+          "answer": "We use carefully applied treatments and share drying/ventilation guidance so the home remains safe for regular use."
+        },
+        {
+          "question": "How long does lizard control last?",
+          "answer": "Results vary by property openness and insect load. Many homes see strong improvement after one treatment; periodic service helps open homes."
+        },
+        {
+          "question": "Do you treat offices for lizards in Ahmedabad?",
+          "answer": "Yes. We handle homes, offices, clinics, and commercial interiors with scheduled appointments."
+        }
+      ],
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Top 5 Signs You Have a Termite Infestation in Ahmedabad",
+      "slug": "signs-of-termite-infestation-ahmedabad",
+      "excerpt": "Termites can cause silent destruction to your property. Learn the early warning signs before they cause expensive structural damage to your home in Ahmedabad.",
+      "metaTitle": "5 Signs of Termite Infestation in Ahmedabad | Early Detection Guide",
+      "metaDescription": "Spot termite damage early in Ahmedabad homes — mud tubes, hollow wood, discarded wings & more. Local tips from Ahmedabad Pest Control. Book a free inspection.",
+      "content": [
+        "Termites are often called \"silent destroyers\" because they can chew through wood, flooring, and even wallpaper undetected. In Ahmedabad, the hot and sometimes humid climate provides an ideal environment for termites to thrive, especially during and after the monsoon season.",
+        "One of the most obvious signs of a termite infestation is the presence of mud tubes on exterior walls. Subterranean termites build these tubes to travel safely between their colony and their food source—your house.",
+        "Another common sign is finding discarded wings near windowsills or doors. When termites swarm to start a new colony, they shed their wings. If you find these delicate, translucent wings, a swarm has likely taken place nearby.",
+        "You should also listen for hollow-sounding wood. Termites consume wood from the inside out, leaving a thin veneer of timber or just the paint. When you knock or tap on an area that has termite damage, it will sound hollow or papery.",
+        "If you notice any of these signs in your Ahmedabad property, it is crucial to contact professional pest control services immediately. Early detection can save you thousands of rupees in repair costs. At Ahmedabad Pest Control, we offer comprehensive termite inspections and targeted treatments to eradicate the colony completely."
+      ],
+      "author": "Ahmedabad Pest Control Team",
+      "date": "Oct 15, 2023",
+      "readTime": "4 min read",
+      "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+      "category": "Termite Control",
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "2",
+      "title": "How to Keep Mosquitoes Away During the Monsoon",
+      "slug": "prevent-mosquitoes-monsoon-ahmedabad",
+      "excerpt": "The monsoon brings relief from the heat but also brings mosquitoes. Discover effective ways to protect your family from dengue and malaria.",
+      "metaTitle": "Mosquito Prevention in Ahmedabad Monsoon | Dengue Safety Tips",
+      "metaDescription": "Reduce mosquitoes in Ahmedabad during monsoon — remove stagnant water, use screens, and know when to book professional fogging. Protect your family from dengue.",
+      "content": [
+        "The monsoon season in Ahmedabad is a welcome relief from the scorching summer heat. However, the heavy rains also leave behind stagnant water, creating the perfect breeding ground for mosquitoes. With mosquitoes come the risks of vector-borne diseases like Dengue, Chikungunya, and Malaria.",
+        "The most critical step in mosquito prevention is eliminating standing water. Inspect your property regularly for flower pots, discarded tires, bird baths, or blocked gutters where water might collect. Even a small bottle cap filled with water can breed hundreds of mosquitoes.",
+        "Ensure your doors and windows are fitted with fine mesh screens. This allows the cool monsoon breeze in while keeping the pests out. If you sleep with windows open, using a mosquito net over your bed provides an excellent physical barrier.",
+        "Indoor plants can sometimes harbor mosquitoes if overwatered. Keep the soil slightly dry on the surface and avoid letting water sit in the drainage plates beneath your pots.",
+        "While DIY methods help, professional mosquito control offers the most robust protection. Our team at Ahmedabad Pest Control provides thermal fogging and targeted larvicidal treatments to significantly reduce mosquito populations around your home or society, ensuring your family stays healthy all season long."
+      ],
+      "author": "Pest Expert",
+      "date": "Sep 02, 2023",
+      "readTime": "5 min read",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop",
+      "category": "Mosquito Control",
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    },
+    {
+      "id": "3",
+      "title": "Why DIY Pest Control Usually Fails (And Costs More)",
+      "slug": "why-diy-pest-control-fails",
+      "excerpt": "Thinking about using store-bought sprays for your pest problem? Find out why professional pest control is a safer, more effective, and ultimately cheaper solution.",
+      "metaTitle": "Why DIY Pest Control Fails in Ahmedabad | Call Professionals",
+      "metaDescription": "Store sprays rarely fix pest nests in Ahmedabad homes. Learn why DIY pest control costs more long-term and when to hire professional treatment.",
+      "content": [
+        "When faced with a sudden cockroach or ant problem, many homeowners in Ahmedabad instinctively reach for over-the-counter pest control sprays. While these might offer a temporary fix, they rarely solve the underlying issue and can sometimes make the problem worse.",
+        "DIY sprays generally only kill the pests you can see. For every cockroach you spot in your kitchen, there could be dozens more hiding in cracks, crevices, or behind appliances. Store-bought solutions don't reach the nest, meaning the infestation will simply bounce back in a few days.",
+        "Moreover, inappropriate use of chemical sprays poses a significant health risk to your family and pets. Professionals are trained to use the right chemicals in the right amounts, ensuring maximum efficacy against pests while maintaining a safe environment for humans.",
+        "Pests are also highly adaptable. Constant use of the same over-the-counter sprays can lead to pests developing resistance to those specific chemicals, making future eradication much more difficult.",
+        "By hiring Ahmedabad Pest Control, you aren't just paying for chemicals; you're paying for expertise. We identify the pest species, locate the source of the infestation, apply targeted professional-grade treatments, and provide actionable advice to prevent their return. It's an investment in your home's hygiene and your peace of mind."
+      ],
+      "author": "Ahmedabad Pest Control Team",
+      "date": "Aug 18, 2023",
+      "readTime": "4 min read",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+      "category": "General Tips",
+      "metaKeywords": "",
+      "ogImage": "",
+      "canonical": "",
+      "noindex": false
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are the chemicals used safe for children and pets?",
+      "answer": "Yes, our top priority is safety. We use industry-approved, eco-friendly, and non-toxic chemicals that are highly effective against pests but perfectly safe for your family and pets."
+    },
+    {
+      "question": "How long does a typical pest control treatment take?",
+      "answer": "Most standard treatments take between 1 to 2 hours, depending on the size of the property and the severity of the infestation."
+    },
+    {
+      "question": "Do I need to vacate the house during the treatment?",
+      "answer": "For general pest control (like cockroaches and ants), there is no need to vacate. However, for extensive termite or bed bug treatments, we may advise you to step out for a few hours. Our technicians will guide you beforehand."
+    },
+    {
+      "question": "Is there a warranty on your pest control services?",
+      "answer": "Yes, we provide warranties on several of our services, including termite and bed bug treatments. The duration of the warranty varies depending on the specific service."
+    },
+    {
+      "question": "How soon can you send someone for an inspection?",
+      "answer": "We offer quick response times and can often schedule a free inspection within 24 hours of your inquiry."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Rahul Desai",
+      "locality": "Vastrapur, Ahmedabad",
+      "rating": 5,
+      "review": "Ahmedabad Pest Control did a fantastic job with our termite problem. The technicians were professional and explained the entire process. Highly recommended!"
+    },
+    {
+      "id": "2",
+      "name": "Priya Sharma",
+      "locality": "Navrangpura, Ahmedabad",
+      "rating": 5,
+      "review": "We had a severe cockroach issue in our kitchen. One visit from their team and the problem is completely gone. Safe for my kids and very effective."
+    },
+    {
+      "id": "3",
+      "name": "Amit Patel",
+      "locality": "Bopal, Ahmedabad",
+      "rating": 4,
+      "review": "Prompt response and excellent service. They treated our society for mosquitoes and we saw immediate results. Very affordable pricing as well."
+    },
+    {
+      "id": "4",
+      "name": "Neha Shah",
+      "locality": "Satellite, Ahmedabad",
+      "rating": 5,
+      "review": "I booked them for a bed bug treatment. They were thorough, on time, and left no mess behind. Finally, I can sleep peacefully."
+    }
+  ],
+  "videos": [
+    {
+      "id": "adDKxCRREiU",
+      "url": "https://www.youtube.com/watch?v=adDKxCRREiU",
+      "title": "Deewar Se Udai Nikal Rahi Hai? | Professional Termite Treatment"
+    },
+    {
+      "id": "E0-OqQhgAGI",
+      "url": "https://www.youtube.com/watch?v=E0-OqQhgAGI",
+      "title": "Udai Ghar Ko Andar Se Kha Rahi Hai! | Termite Problem"
+    },
+    {
+      "id": "g9oYRwpltEc",
+      "url": "https://www.youtube.com/watch?v=g9oYRwpltEc",
+      "title": "Red Ants Se Pareshan? | Professional Ant Treatment"
+    },
+    {
+      "id": "30huJ9BnA5k",
+      "url": "https://www.youtube.com/watch?v=30huJ9BnA5k",
+      "title": "Cockroach Se Pareshan? | Professional Cockroach Treatment"
+    },
+    {
+      "id": "M9FrXuyxKEQ",
+      "url": "https://www.youtube.com/watch?v=M9FrXuyxKEQ",
+      "title": "Ghar Mein Chipkali Se Pareshan? | Lizard Control"
+    },
+    {
+      "id": "ZxLfH-6Blsw",
+      "url": "https://www.youtube.com/watch?v=ZxLfH-6Blsw",
+      "title": "Khatmal Se Pareshan? | Bed Bug Treatment"
+    },
+    {
+      "id": "el23Itu66zc",
+      "url": "https://www.youtube.com/watch?v=el23Itu66zc",
+      "title": "Machhar Se Savdhan! Dengue, Malaria Ka Risk"
+    },
+    {
+      "id": "jCMdP7S1C_I",
+      "url": "https://www.youtube.com/watch?v=jCMdP7S1C_I",
+      "title": "Kabutaron Se Pareshan? | Pigeon Problem Ka Smart Solution"
+    }
+  ],
+  "text": {
+    "About": {
+      "field1": "Family-safe treatments",
+      "field2": "Certified technicians",
+      "field3": "Root-cause inspection",
+      "field4": "Warranty-backed service",
+      "field5": "Transparent pricing",
+      "field6": "Same-day availability",
+      "field7": "Who we are",
+      "field8": "About Ahmedabad Pest Control",
+      "field9": "Committed to safe, effective, and environmentally responsible pest control across Ahmedabad since 2008.",
+      "image10": "/how-we-work.png",
+      "field11": "Ahmedabad Pest Control team at work",
+      "field12": "Our story",
+      "field13": "Protecting homes and health for 15+ years",
+      "field14": "Built on trust, training, and treatments that last.",
+      "field15": "Ahmedabad Pest Control started with one mission: deliver high-quality pest management while keeping families, pets, and the environment safe.",
+      "field16": "We’ve grown into one of the city’s trusted names by using proven methods and continuously training our technicians. Every visit focuses on finding the source — not just spraying symptoms.",
+      "field17": "From termite barriers to mosquito fogging, we tailor each plan to your property and Ahmedabad’s climate.",
+      "field18": "By the numbers",
+      "field19": "Results that speak for themselves",
+      "field20": "Years Experience",
+      "field21": "Homes Protected",
+      "field22": "Expert Technicians",
+      "field23": "Satisfaction Rate",
+      "field24": "Let’s protect your space"
+    },
+    "Blog": {
+      "field1": "Guides & tips",
+      "field2": "Pest Control Blog",
+      "field3": "Expert advice for keeping your Ahmedabad home or business safe from pests year-round.",
+      "field4": "Latest reading",
+      "field5": "Practical articles from our team",
+      "field6": "Prevention tips, warning signs, and treatment guidance written for real Ahmedabad homes.",
+      "field7": "Dealing with an active infestation?",
+      "field8": "Don’t wait it out. Book a free inspection and get a clear plan from our technicians."
+    },
+    "BlogPost": {
+      "field1": "Back to articles",
+      "field2": "Need professional help?",
+      "field3": "Our Ahmedabad team is ready to inspect and treat.",
+      "field4": "Book Free Inspection",
+      "field5": "Keep reading"
+    },
+    "Contact": {
+      "field1": "Get in touch",
+      "field2": "Contact Us",
+      "field3": "Ready to secure your home from pests? Send an inquiry on WhatsApp or call us today.",
+      "field4": "Free Inspection",
+      "field5": "WhatsApp Quotes",
+      "field6": "Same-Day Visits",
+      "field7": "Mon–Sat 8AM–8PM",
+      "field8": "All Ahmedabad Areas",
+      "field9": "Reach us",
+      "field10": "We’re here to help",
+      "field11": "Ask about inspections, treatments, or ongoing maintenance for your home or business.",
+      "field12": "Areas We Serve",
+      "field13": "Phone & WhatsApp",
+      "field14": "Chat on WhatsApp",
+      "field15": "Email",
+      "field16": "Business Hours",
+      "field17": "Mon – Sat: 8:00 AM – 8:00 PM",
+      "field18": "Sun: 9:00 AM – 2:00 PM",
+      "field19": "Request a Free Quote",
+      "field20": "Fill the form and we’ll open WhatsApp with your inquiry ready to send.",
+      "field21": "Ahmedabad Pest Control Location"
+    },
+    "FAQ": {
+      "field1": "Home",
+      "field2": "FAQs",
+      "field3": "Help center",
+      "field4": "Frequently Asked Questions",
+      "field5": "Clear answers on safety, process, pricing, and what to expect from our team.",
+      "field6": "Safety",
+      "field7": "Pricing",
+      "field8": "Process",
+      "field9": "Warranty",
+      "field10": "Same-Day Service",
+      "field11": "Pets & Kids",
+      "field12": "Common queries",
+      "field13": "Everything you need to know",
+      "field14": "Still have questions?",
+      "field15": "Can’t find what you need? Our team is happy to help over call or WhatsApp.",
+      "field16": "Contact Us"
+    },
+    "Home": {
+      "image1": "/images/pest-control-in-ahmedabad.jpg",
+      "field2": "Trusted Professionals",
+      "field3": "Safe & Effective",
+      "field4": "Advanced Technology",
+      "field5": "100% Satisfaction",
+      "field6": "15+ Years Experience",
+      "field7": "All Ahmedabad Areas",
+      "field8": "Do you provide pest control across Ahmedabad?",
+      "field9": "Yes. Ahmedabad Pest Control serves Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela and nearby Ahmedabad localities.",
+      "field10": "Which pests do you treat in Ahmedabad?",
+      "field11": "We treat termites, cockroaches, rodents, mosquitoes, bed bugs and lizards for homes, societies, offices and commercial spaces.",
+      "field12": "How can I get a free pest control quote in Ahmedabad?",
+      "field13": "Home",
+      "field14": "Serving Ahmedabad homes & businesses",
+      "field15": "Pest-free spaces.",
+      "field16": "Healthier living.",
+      "field17": "Professional inspection, precise treatment, and lasting protection — built for Ahmedabad’s climate and your family’s safety.",
+      "field18": "Get Free Quote",
+      "field19": "10,000+ homes protected",
+      "field20": "Family-safe treatments",
+      "field21": "Same-day service available",
+      "field22": "Quick Inquiry",
+      "field23": "15+ Yrs",
+      "field24": "Share details — we’ll open WhatsApp with your inquiry ready to send.",
+      "field25": "What we treat",
+      "field26": "Pest control services for every infestation",
+      "field27": "Targeted solutions for homes, societies, offices, and warehouses across Ahmedabad.",
+      "field28": "View all services",
+      "image29": "/how-we-work.png",
+      "field30": "Certified Ahmedabad Pest Control technician treating a home",
+      "field31": "Family-safe treatments",
+      "field32": "Warranty-backed service across Ahmedabad",
+      "field33": "Our process",
+      "field34": "From inspection to lasting protection",
+      "field35": "Every visit follows a clear method — find the source, treat precisely, then close the gaps that bring pests back.",
+      "field36": "Inspect the property",
+      "field37": "We check entry points, moisture zones, and breeding spots before any treatment begins.",
+      "field38": "Treat with precision",
+      "field39": "Certified technicians apply targeted, low-odour solutions suited to your space — not a blanket spray.",
+      "field40": "Protect & follow up",
+      "field41": "Prevention guidance and follow-ups so the problem stays solved, not quiet for a week.",
+      "field42": "Book Free Inspection",
+      "field43": "Same-day visits in most Ahmedabad localities.",
+      "field44": "Watch & learn",
+      "field45": "Watch Our Latest Videos",
+      "field46": "Real treatments, tips, and pest problems solved across Ahmedabad — straight from our channel.",
+      "field47": "Client stories",
+      "field48": "Trusted by families across Ahmedabad",
+      "field49": "Real results from homes, kitchens, and societies we’ve treated.",
+      "field50": "Read all reviews",
+      "field51": "Guides & tips",
+      "field52": "Practical advice for a pest-free home",
+      "field53": "Simple, expert guidance written for Ahmedabad homes.",
+      "field54": "Browse articles",
+      "field55": "Free Inspection",
+      "field56": "WhatsApp Quote",
+      "field57": "Same-Day Service",
+      "field58": "Warranty Backed",
+      "field59": "Family Safe",
+      "field60": "10,000+ Homes Protected",
+      "field61": "Eco-Friendly Treatment",
+      "field62": "All Ahmedabad Areas",
+      "field63": "Ready for a pest-free home?",
+      "field64": "Book a free inspection today. Our team will assess the issue and recommend the right treatment — no pressure, clear pricing.",
+      "field65": "Get a Free Quote",
+      "field66": "Call",
+      "quoteAnswer": "Use the Quick Inquiry form on our website or WhatsApp/call {phone}. We can often schedule inspection within 24 hours."
+    },
+    "ServiceDetail": {
+      "field1": "Ahmedabad Pest Control",
+      "field2": "Home",
+      "field3": "Services",
+      "field4": "All pest control services",
+      "field5": "Pest control in Ahmedabad",
+      "field6": "About our",
+      "field7": "in Ahmedabad",
+      "field8": "What’s included",
+      "field9": "Common signs you need",
+      "field10": "Our",
+      "field11": "process",
+      "field12": "STEP",
+      "field13": "near you in Ahmedabad",
+      "field14": "We provide",
+      "field15": "across major Ahmedabad localities including Satellite, Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and more.",
+      "field16": "FAQs about",
+      "field17": "in Ahmedabad",
+      "field18": "Related pest control services",
+      "field19": "in Ahmedabad",
+      "field20": "Book",
+      "field21": "in Ahmedabad",
+      "field22": "Share your locality and pest issue — we’ll open WhatsApp with your inquiry ready to send.",
+      "field23": "Call",
+      "field24": "Serving homes & businesses across Ahmedabad",
+      "field25": "Need help choosing?",
+      "field26": "Free inspection, clear recommendations, and treatment planned for Ahmedabad homes and commercial spaces.",
+      "field27": "Request Free Quote",
+      "field28": "View All Services",
+      "field29": "Tell us your Ahmedabad locality and we’ll schedule inspection or treatment at the earliest slot.",
+      "guideTitlePrefix": "Get expert ",
+      "guideTitleSuffix": " guidance today",
+      "areaCtaPrefix": "Need ",
+      "areaCtaSuffix": " in your area?"
+    },
+    "Services": {
+      "field1": "Homes & bungalows",
+      "field2": "Flats, duplexes, and independent houses across Ahmedabad needing safe indoor treatment.",
+      "field3": "Residential societies",
+      "field4": "Common-area mosquito, rodent, and general pest programs for societies and townships.",
+      "field5": "Shops & restaurants",
+      "field6": "Kitchen-focused cockroach and rodent control with discreet scheduling.",
+      "field7": "Offices & warehouses",
+      "field8": "Commercial pest management for offices, clinics, godowns, and industrial units.",
+      "field9": "Family-safe methods with clear prep and after-care guidance",
+      "field10": "Targeted treatment plans — not one spray for every pest",
+      "field11": "Coverage across west, central, and east Ahmedabad localities",
+      "field12": "WhatsApp quotes and transparent pricing before work starts",
+      "field13": "Warranty options on selected services like termite treatment",
+      "field14": "Which pest control service do I need in Ahmedabad?",
+      "field15": "It depends on the pest and where activity is happening. Termites need structural treatment, kitchen cockroaches need gel baiting, and monsoon mosquitoes often need fogging plus larval control. A free inspection helps us recommend the right plan.",
+      "field16": "Do you provide pest control near Satellite, Bopal, and SG Highway?",
+      "field17": "Yes. We regularly serve Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj, Shela, and nearby Ahmedabad areas.",
+      "field18": "Are your treatments safe for kids and pets?",
+      "field19": "Safety is prioritized. We use approved methods, explain precautions, and plan applications carefully around kitchens, bedrooms, and living areas.",
+      "field20": "How fast can I book pest control in Ahmedabad?",
+      "field21": "In most cases we can schedule inspection or service within 24 hours. Share your locality and pest issue on WhatsApp for the quickest response.",
+      "field22": "Ahmedabad Pest Control",
+      "field23": "Ahmedabad",
+      "field24": "Pest control in Ahmedabad",
+      "field25": "Professional Pest Control Services in Ahmedabad",
+      "field26": "Safe, targeted treatments for homes, societies, offices, and commercial spaces across Ahmedabad — Makarba, Vasna, Vejalpur, Paldi, Satellite, Bopal, Vastral, Shilaj & Shela.",
+      "field27": "in Ahmedabad",
+      "field28": "Why Ahmedabad needs specialist care",
+      "field29": "Pest problems here need local solutions",
+      "field30": "Warm weather, monsoon humidity, and dense housing make infestations spread fast — DIY sprays rarely fix the source.",
+      "field31": "Ahmedabad Pest Control provides end-to-end pest management for residential and commercial properties across the city. Whether you need",
+      "field32": "termite control in Ahmedabad",
+      "field33": ", kitchen",
+      "field34": "cockroach treatment",
+      "field35": ", society",
+      "field36": "mosquito fogging",
+      "field37": ", or rodent management for shops and warehouses, our technicians inspect first and treat with precision.",
+      "field38": "Every service plan is built around your property type — apartment, bungalow, society common area, restaurant, office, or godown — and the pest behaviour common to Gujarat’s climate.",
+      "field39": "Book Free Inspection",
+      "field40": "Call Now",
+      "field41": "What you get with every service",
+      "field42": "Our treatments",
+      "field43": "Pest control services we offer in Ahmedabad",
+      "field44": "Choose a service below for detailed process, signs of infestation, and local coverage information.",
+      "field45": "Who we serve",
+      "field46": "Residential and commercial pest control across Ahmedabad",
+      "field47": "From single flats to full society contracts — we match the treatment to your space.",
+      "field48": "Areas we cover",
+      "field49": "Pest control near you in Ahmedabad",
+      "field50": "Fast response across major Ahmedabad localities — west, central, and east corridors.",
+      "field51": "Don’t see your society or road listed? Message us your landmark — we cover most of Ahmedabad and nearby developing areas.",
+      "field52": "How booking works",
+      "field53": "Simple process from inquiry to protection",
+      "field54": "Share your pest issue",
+      "field55": "Tell us your locality in Ahmedabad and the pest problem via WhatsApp or our inquiry form.",
+      "field56": "Free inspection & quote",
+      "field57": "We inspect the property, identify the source, and share a clear treatment plan with pricing.",
+      "field58": "Treat & follow up",
+      "field59": "Certified technicians complete the service and guide you on prevention for lasting results.",
+      "field60": "Local FAQs",
+      "field61": "Common questions about pest control in Ahmedabad",
+      "field62": "Need a specific service page?",
+      "field63": "Need pest control in your Ahmedabad locality?",
+      "field64": "Book a free inspection. We’ll identify the pest, recommend the right treatment, and share clear pricing before we start.",
+      "sameDayNote": "Local Ahmedabad team with same-day / next-day inspection options"
+    },
+    "Testimonials": {
+      "field1": "Client stories",
+      "field2": "Testimonials",
+      "field3": "Real feedback from families and businesses we’ve helped across Ahmedabad.",
+      "field4": "All reviews",
+      "field5": "Trusted across Ahmedabad localities",
+      "field6": "From termite treatments to mosquito fogging — here’s what clients say after the job.",
+      "field7": "Ready to experience the same service?"
+    },
+    "AreasMarquee": {},
+    "BlogCard": {
+      "field1": "Read article"
+    },
+    "Button": {},
+    "FloatingWhatsApp": {
+      "field1": "Chat with us on WhatsApp",
+      "field2": "Chat on WhatsApp"
+    },
+    "Footer": {
+      "field1": "Ahmedabad Pest Control",
+      "field2": "Protecting Homes. Protecting Health. Trusted pest control services in Ahmedabad, ensuring a safe and pest-free environment for your family.",
+      "field3": "Instagram",
+      "field4": "YouTube",
+      "field5": "Quick Links",
+      "field6": "About Us",
+      "field7": "All Services",
+      "field8": "Pest Control Blog",
+      "field9": "Testimonials",
+      "field10": "FAQs",
+      "field11": "Contact Us",
+      "field12": "Our Services",
+      "field13": "Contact Info",
+      "field14": "Serving ",
+      "field15": "Ahmedabad Pest Control. All rights reserved.",
+      "field16": "Privacy Policy",
+      "field17": "Terms of Service"
+    },
+    "InquiryForm": {
+      "field1": "Full Name *",
+      "field2": "Your name",
+      "field3": "Phone Number *",
+      "field4": "Please enter a valid 10 digit phone number",
+      "field5": "10-digit mobile",
+      "field6": "Email Address",
+      "field7": "optional",
+      "field8": "Service Needed *",
+      "field9": "Select a service",
+      "field10": "General Inspection",
+      "field11": "Service Needed *",
+      "field12": "Select a service",
+      "field13": "General Inspection",
+      "field14": "Address/Locality",
+      "field15": "e.g. Makarba, Vasna, Satellite",
+      "field16": "Message",
+      "field17": "Tell us about your pest problem",
+      "field18": "Submitting saves your inquiry and opens WhatsApp with your details ready to send.",
+      "websiteLabel": "Website",
+      "savingLabel": "Saving inquiry…",
+      "submitLabel": "Send on WhatsApp",
+      "saveError": "Unable to save your inquiry. Please try again.",
+      "savedMessage": "Your inquiry has been saved.",
+      "continueLabel": "Continue on WhatsApp"
+    },
+    "Layout": {},
+    "Marquee": {},
+    "Navbar": {
+      "callLabel": "Call Us Now",
+      "quoteLabel": "Get Free Quote",
+      "homeLabel": "Home",
+      "aboutLabel": "About Us",
+      "servicesLabel": "Services",
+      "blogLabel": "Blog",
+      "testimonialsLabel": "Testimonials",
+      "faqLabel": "FAQ",
+      "contactLabel": "Contact",
+      "callAriaLabel": "Call us",
+      "menuAriaLabel": "Toggle menu"
+    },
+    "PageCta": {
+      "field1": "Free Inspection",
+      "field2": "WhatsApp Quote",
+      "field3": "Same-Day Service",
+      "field4": "Warranty Backed",
+      "field5": "Family Safe",
+      "field6": "10,000+ Homes Protected",
+      "field7": "Eco-Friendly Treatment",
+      "field8": "All Ahmedabad Areas",
+      "field9": "Get a Free Quote",
+      "field10": "Call",
+      "defaultTitle": "Ready for a pest-free home?",
+      "defaultSubtitle": "Book a free inspection today. Clear recommendations, family-safe treatments, and honest pricing."
+    },
+    "PageHero": {},
+    "ScrollReveal": {},
+    "SectionHeading": {},
+    "ServiceCard": {},
+    "YouTubeSlider": {
+      "field1": "Previous videos",
+      "field2": "Next videos",
+      "field3": "Watch more on YouTube",
+      "field4": "Close video"
+    }
+  }
+}

@@ -1,7 +1,3 @@
-import { WHATSAPP_NUMBER as WA } from '../data/seo';
-
-export const WHATSAPP_NUMBER = WA;
-
 export function buildInquiryMessage(data) {
   const lines = [
     'New Pest Control Inquiry',
@@ -22,7 +18,7 @@ export function buildInquiryMessage(data) {
   return lines.join('\n');
 }
 
-export function openWhatsAppInquiry(data) {
+export function buildWhatsAppUrl(data, number) {
   const text = encodeURIComponent(buildInquiryMessage(data));
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank', 'noopener,noreferrer');
+  return `https://wa.me/${number}?text=${text}`;
 }

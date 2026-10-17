@@ -1,27 +1,25 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-
-export const ServiceCard = ({ service, index }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.45, delay: index * 0.06 }}
-      className="h-full"
-    >
-      <Link
-        to={`/services/${service.slug}`}
-        className="group relative flex h-full min-h-[300px] overflow-hidden sm:min-h-[340px]"
-        aria-label={service.title}
-      >
-        <img
-          src={service.image}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-        />
+export const ServiceCard = ({
+  service,
+  index
+}) => {
+  return <motion.div initial={{
+    opacity: 0,
+    y: 24
+  }} whileInView={{
+    opacity: 1,
+    y: 0
+  }} viewport={{
+    once: true,
+    margin: '-40px'
+  }} transition={{
+    duration: 0.45,
+    delay: index * 0.06
+  }} className="h-full">
+      <Link href={`/services/${service.slug}`} className="group relative flex h-full min-h-[300px] overflow-hidden sm:min-h-[340px]" aria-label={service.title}>
+        <img src={service.image} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/85 via-brand-dark/20 to-transparent transition-colors duration-300 group-hover:from-brand-dark/90 group-hover:via-brand-dark/35" />
 
         <div className="relative mt-auto w-full p-0">
@@ -49,6 +47,5 @@ export const ServiceCard = ({ service, index }) => {
           </div>
         </div>
       </Link>
-    </motion.div>
-  );
+    </motion.div>;
 };

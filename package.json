@@ -4,26 +4,35 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "admin:create": "node scripts/create-admin.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "framer-motion": "^13.2.0",
+    "jose": "^6.2.12",
     "lucide-react": "^1.44.0",
+    "mongodb": "^7.7.0",
+    "multer": "^2.4.0",
+    "next": "^16.4.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-helmet-async": "^3.0.0",
-    "react-router-dom": "^7.18.3"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "@vitejs/plugin-react": "^6.1.1",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4.3.3",
     "autoprefixer": "^10.5.6",
     "oxlint": "^1.81.0",
     "postcss": "^8.5.28",
-    "tailwindcss": "^4.3.3",
-    "vite": "^8.3.0"
+    "tailwindcss": "^4.3.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   }
 }
