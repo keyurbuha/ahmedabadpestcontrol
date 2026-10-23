@@ -9,6 +9,11 @@ test('the existing site content is valid and keeps the requested contact number'
   assert.equal(defaults.site.BUSINESS_PHONE, '+917984348574');
   assert.equal(defaults.site.WHATSAPP_NUMBER, '917984348574');
 });
+test('legacy Instagram video fields are removed during content migration', () => {
+  const content = structuredClone(defaults);
+  content.text.InstagramVideos = { heading: 'Old section' };
+  assert.equal(validateContent(content).text.InstagramVideos, undefined);
+});
 test('fixed page routes and duplicate collection identities are rejected', () => {
   for (const change of [d => d.seo.home.path = '/new-page', d => d.services.push(d.services[0]), d => d.blogs.push({ ...d.blogs[0], id: 'another-id' })]) {
     const content = structuredClone(defaults); change(content);

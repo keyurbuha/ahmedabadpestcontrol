@@ -18,6 +18,7 @@ function mergeMissing(saved, template) {
 function normalizeContent(saved) {
   const content = mergeMissing(saved, defaults);
   delete content.instagramVideos;
+  if (content.text) delete content.text.InstagramVideos;
   content.faqs = (content.faqs || []).map(item => ({ id: item.id || randomUUID(), ...item }));
   content.testimonials = (content.testimonials || []).map(item => ({ ...item, id: String(item.id || randomUUID()) }));
   content.videos = (content.videos || []).map(item => ({ ...item, url: item.url || `https://www.youtube.com/watch?v=${item.id}` }));

@@ -2,6 +2,30 @@ import { getAdmin } from './auth.js';
 import { rateLimit } from './db.js';
 import { isIP } from 'node:net';
 
+export function hasValidOrigin(req) {
+  if (typeof req.headers.origin !== 'string') return false;
+  let origin;
+  try {
+    origin = new URL(req.headers.origin);
+  } catch {
+    return false;
+  }
+  if (!['http:', 'https:'].includes(origin.protocol)) return false;
+
+  // APP_ORIGIN remains useful when a reverse proxy changes the Host header.
+  // Direct LAN access is also safe when the browser Origin matches the Host it
+  // sent the request to (for example http://192.168.1.20:3000).
+  const configured = (process.env.APP_ORIGIN || '').split(',').map(value => value.trim()).filter(Boolean);
+  for (const value of configured) {
+    try {
+      if (origin.origin === new URL(value).origin) return true;
+    } catch {
+      // Ignore malformed entries and continue to the same-host check.
+    }
+  }
+  return typeof req.headers.host === 'string' && origin.host.toLowerCase() === req.headers.host.trim().toLowerCase();
+}
+
 export function api(handler, { methods = ['GET'], admin = false, rate } = {}) {
   return async (req, res) => {
     res.setHeader('Cache-Control', 'no-store');
@@ -10,8 +34,7 @@ export function api(handler, { methods = ['GET'], admin = false, rate } = {}) {
       return res.status(405).json({ error: 'Method not allowed.' });
     }
     if (!['GET', 'HEAD'].includes(req.method)) {
-      const expected = process.env.APP_ORIGIN;
-      if (!expected || req.headers.origin !== new URL(expected).origin) {
+      if (!hasValidOrigin(req)) {
         return res.status(403).json({ error: 'Invalid request origin.' });
       }
     }
